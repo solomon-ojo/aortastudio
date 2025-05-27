@@ -34,6 +34,7 @@ export default function ClientsSection() {
           <ClientLogo src="/logos/ltse.png" alt="LTSE" className="h-6" />
         </div>
       </div>
+      <hr className="mt-16 border-white/40"/>
     </section>
   )
 }
