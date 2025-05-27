@@ -20,7 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <Navbar />
-        <SpotifyButton />
         {children}
         <Footer />
       </body>

@@ -18,7 +18,6 @@ export default function Home() {
       <Navbar />
 
       {/* Spotify Button */}
-      <SpotifyButton />
 
       {/* Hero Section */}
       <HeroSection />

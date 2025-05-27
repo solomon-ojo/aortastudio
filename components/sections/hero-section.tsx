@@ -15,8 +15,8 @@ export default function HeroSection() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-4">
+      <div className="relative items-center z-10 container mx-auto px-4 h-full flex flex-col justify-center">
+        <h1 className=" text-4xl md:text-6xl lg:text-8xl font-light mb-4">
           <div className="text-yellow-300 mb-2">House of Engineers.</div>
           <div className="mb-2">Big enough to deliver,</div>
           <div>small enough to care.</div>
