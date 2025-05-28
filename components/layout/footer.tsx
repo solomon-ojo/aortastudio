@@ -59,27 +59,6 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-medium mb-4">Company</h3>
             <div className="flex flex-col space-y-2">
-              <NavLink href="/ai-hub" className="group relative overflow-hidden">
-                AI-HUB
-                <ArrowRight
-                  className="absolute right-0 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ml-2"
-                  size={16}
-                />
-              </NavLink>
-              <NavLink href="/client-stories" className="group relative overflow-hidden">
-                Client stories
-                <ArrowRight
-                  className="absolute right-0 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ml-2"
-                  size={16}
-                />
-              </NavLink>
-              <NavLink href="/careers" className="group relative overflow-hidden">
-                Careers
-                <ArrowRight
-                  className="absolute right-0 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ml-2"
-                  size={16}
-                />
-              </NavLink>
               <NavLink href="/about-us" className="group relative overflow-hidden">
                 About us
                 <ArrowRight

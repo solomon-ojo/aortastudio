@@ -9,7 +9,6 @@ import HowWeWorkSection from "@/components/sections/how-we-work-section"
 import OurProcessSection from "@/components/sections/our-process-section"
 import JoinUsSection from "@/components/sections/join-us-section"
 import ContactFormSection from "@/components/sections/contact-form-section"
-import SpotifyButton from "@/components/ui/spotify-button"
 
 export default function Home() {
   return (

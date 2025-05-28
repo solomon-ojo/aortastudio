@@ -25,13 +25,13 @@ export default function IndustriesSection() {
   ]
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 h-[800px] items-center flex justify-center">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="mb-4">
-            <span className="text-sm text-gray-600 uppercase tracking-wider">Industries</span>
+            <span className="text-lg text-gray-600 uppercase tracking-wider">Industries</span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-black">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-light text-black">
             The wide spectrum of industries we serve
           </h2>
         </div>
@@ -41,11 +41,11 @@ export default function IndustriesSection() {
             <div key={index} className="group cursor-pointer">
               <div className="bg-gray-50 rounded-lg p-6 h-32 flex flex-col items-center justify-center hover:bg-gray-100 transition-colors relative">
                 {industry.isNew && (
-                  <div className="absolute top-2 right-2 bg-yellow-300 text-black text-xs px-2 py-1 rounded">NEW</div>
+                  <div className="absolute top-2 right-2 bg-yellow-300 text-black text-md px-2 py-1 rounded">NEW</div>
                 )}
-                <div className="w-8 h-8 mb-3">
+                <div className="w-16 h-16 mb-3">
                   <svg width="100%" height="100%" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" clipRule="evenodd" d={industry.icon} fill="currentColor" />
+                    <path fillRule="evenodd" clipRule="evenodd" d={industry.icon} fill="black" />
                   </svg>
                 </div>
                 <h3 className="text-sm font-medium text-black text-center">{industry.name}</h3>

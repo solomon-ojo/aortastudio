@@ -17,76 +17,76 @@ export default function ClientStoriesSection() {
       id: "unity",
       title: "Internal software tools for support of internal development process",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f17af86fbbf271ff8a74b_Unity.jpg",
-      href: "/client-stories/unity",
+      href: "#",
     },
     {
       id: "coinbase",
       title: "Ensuring Security and Reliability Across Cryptocurrency Applications",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f18081018f7cc675e8e12_Coinbase.jpg",
-      href: "/client-stories/coinbase",
+      href: "#",
     },
     {
       id: "stats-perform",
       title: "Who needs excitement that sport brings when you can turn it into numbers",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f18571018f7cc675eb8ed_Stats_Perform.jpg",
-      href: "/client-stories/stats-perform",
+      href: "#",
     },
     {
       id: "atlas-copco",
       title: "Heavy duty software for heavy duty industrial equipment for reliable and safe manufacturing",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f18a6878c50e34216250a_Atlas_Copco.jpg",
-      href: "/client-stories/atlas-copco",
+      href: "#",
     },
     {
       id: "burda-style",
       title: "Transforming a Legacy Platform for a Seamless Fashion Community Experience",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f18f4e1f5554d59c763a1_Burda.jpg",
-      href: "/client-stories/burda-style",
+      href: "#",
     },
     {
       id: "better-collective",
       title: "Developing Web and Mobile Applications for Global Sports Media",
       image:
         "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f190b1fa3bef0fb285a37_Better_Collective.jpg",
-      href: "/client-stories/better-collective",
+      href: "#",
     },
     {
       id: "mifcom-gmbh",
       title: "Building a Scalable eCommerce Platform for Custom PC Solutions",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f0b60deb5e80fbfc44267_Mifcom.jpg",
-      href: "/client-stories/mifcom-gmbh",
+      href: "#",
     },
     {
       id: "ltse",
       title: "Building a Successful B2B Platform from Scratch to Support Rapid Growth",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f0c2d769318df75d0f64b_LTSE.jpg",
-      href: "/client-stories/ltse",
+      href: "#",
     },
     {
       id: "infront-finance",
       title:
         "Centralizing and Enhancing Real-Time Data Systems for one of Europe's leading providers of market data and software",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f0cdb4734e78e7bb39019_Infront.jpg",
-      href: "/client-stories/infront-finance",
+      href: "#",
     },
     {
       id: "fairlo",
       title: "Development for an automated and easy to use finance platform",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f1a85552843810a4dec42_Fairlo.jpg",
-      href: "/client-stories/fairlo",
+      href: "#",
     },
     {
       id: "smart-planner",
       title: "Developing a recommendation system for suggesting the most suitable recipes",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f1b76682626fb96541dda_Smart_Planner.jpg",
-      href: "/client-stories/smart-planner",
+      href: "#",
     },
     {
       id: "navdy",
       title:
         "Software development of user interface components and wireless Android-iOS platform integration for Android system",
       image: "https://cdn.prod.website-files.com/64fc70dc7492160ad5cb067b/655f1d267bc5fd1d7cdce143_Navdy.jpg",
-      href: "/client-stories/navdy",
+      href: "#",
     },
   ]
 
@@ -168,9 +168,9 @@ export default function ClientStoriesSection() {
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <div className="mb-4">
-            <span className="text-sm text-white/70 uppercase tracking-wider">CLIENT STORIES</span>
+            <span className="text-md text-white/70 uppercase tracking-wider">CLIENT STORIES</span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-8 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl lg:text-7xl font-light text-white mb-8 max-w-4xl">
             We architect, build and test IT solutions for Fortune 500, SMEs and startups of all sizes.
           </h2>
         </div>
@@ -178,7 +178,7 @@ export default function ClientStoriesSection() {
         <div className="flex items-center justify-between mb-12">
           <h3 className="text-xl md:text-2xl text-white">Check out all client stories</h3>
           <a
-            href="/client-stories"
+            href="#"
             className="inline-flex items-center bg-yellow-300 text-black px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors"
           >
             <span className="text-sm font-medium mr-2">MORE</span>

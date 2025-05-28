@@ -13,7 +13,7 @@ interface WorkMethod {
 }
 
 export default function HowWeWorkSection() {
-  const [activeMethod, setActiveMethod] = useState<string>("dedicated")
+  const [hoveredMethod, setHoveredMethod] = useState<string | null>(null)
 
   const workMethods: WorkMethod[] = [
     {
@@ -114,38 +114,47 @@ export default function HowWeWorkSection() {
           {workMethods.map((method) => (
             <div
               key={method.id}
-              className={`border-t border-white/10 ${method.id === activeMethod ? "bg-[#4d5a59]" : ""}`}
+              className={`border-t border-white/10 transition-all duration-500 ease-in-out ${
+                hoveredMethod === method.id ? "bg-[#4d5a59]" : ""
+              }`}
+              onMouseEnter={() => setHoveredMethod(method.id)}
+              onMouseLeave={() => setHoveredMethod(null)}
             >
               <div className="p-8">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-2xl md:text-3xl font-light">{method.title}</h3>
-                  <button
-                    onClick={() => setActiveMethod(method.id)}
-                    className={`w-8 h-8 flex items-center justify-center transition-transform ${activeMethod === method.id ? "rotate-45" : ""}`}
+                  <h3 className="text-2xl md:text-3xl font-light text-white">{method.title}</h3>
+                  <div
+                    className={`w-8 h-8 flex items-center justify-center transition-transform duration-300 ${
+                      hoveredMethod === method.id ? "rotate-45" : ""
+                    }`}
                   >
-                    <Plus className="w-6 h-6" />
-                  </button>
+                    <Plus className="w-6 h-6 text-white" />
+                  </div>
                 </div>
 
-                {activeMethod === method.id && (
-                  <div className="mt-6">
-                    <p className="text-white/80 mb-6">{method.description}</p>
+                <div
+                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                    hoveredMethod === method.id 
+                      ? "max-h-96 opacity-100 mb-6" 
+                      : "max-h-0 opacity-0 mb-0"
+                  }`}
+                >
+                  <p className="text-white/80 mb-6">{method.description}</p>
 
-                    <div>
-                      <h4 className="text-white/70 text-sm uppercase mb-4">BENEFITS:</h4>
-                      <ul className="space-y-2">
-                        {method.benefits.map((benefit, index) => (
-                          <li key={index} className="flex items-start">
-                            <span className="text-white mr-2">•</span>
-                            <span className="text-white/80">{benefit}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  <div>
+                    <h4 className="text-white/70 text-sm uppercase mb-4">BENEFITS:</h4>
+                    <ul className="space-y-2">
+                      {method.benefits.map((benefit, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="text-white mr-2">•</span>
+                          <span className="text-white/80">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                )}
+                </div>
 
-                <div className="mt-8 w-24 h-24">{method.icon}</div>
+                <div className="w-24 h-24">{method.icon}</div>
               </div>
             </div>
           ))}
