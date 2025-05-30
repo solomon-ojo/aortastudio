@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/navbar"
+import Footer from "@/components/layout/footer"
 import HeroSection from "@/components/sections/hero-section"
 import ClientsSection from "@/components/sections/clients-section"
 import ClientStoriesSection from "@/components/sections/client-stories-section"
@@ -49,7 +50,7 @@ export default function Home() {
       <ContactFormSection />
 
       {/* Footer */}
-      
+      <Footer />
     </main>
   )
 }

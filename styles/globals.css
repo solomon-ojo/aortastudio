@@ -10,7 +10,43 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    @keyframes scroll-reverse {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
 }
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(33.333%);
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(33.333%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 @layer base {
   :root {

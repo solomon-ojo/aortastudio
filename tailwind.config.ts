@@ -74,6 +74,14 @@ const config: Config = {
         sans: ["var(--font-sans)", "sans-serif"],
       },
       keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-100% - 3rem))' }, // Adjust based on gap
+        },
+        'scroll-reverse': {
+          '0%': { transform: 'translateX(calc(-100% - 3rem))' }, // Adjust based on gap
+          '100%': { transform: 'translateX(0)' },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -94,6 +102,8 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'scroll': 'scroll 30s linear infinite',
+        'scroll-reverse': 'scroll-reverse 30s linear infinite',
       },
     },
   },

@@ -1,4 +1,6 @@
 import ContactFormSection from "@/components/sections/contact-form-section"
+import PageWrapper from "@/components/ui/page-wrapper"
+
 
 export default function BlogPage() {
   const featuredPost = {
@@ -25,16 +27,18 @@ export default function BlogPage() {
   ]
 
   return (
+    <PageWrapper>
     <main className="min-h-screen bg-[#e8f1f1] text-black">
       <section className="section is-blog-hero py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center">
+            <div className="text-left m-[100px]">
               <div className="text-sm uppercase mb-2">OUR ARTICLES</div>
               <h1 className="text-5xl md:text-7xl font-light mb-8">Blog</h1>
             </div>
           </div>
         </div>
+        <hr className="border-black border-1"/>
       </section>
 
       <section className="section is-featured-blog py-16 bg-[#e8f1f1]">
@@ -43,7 +47,7 @@ export default function BlogPage() {
             <a href={`/blog/${featuredPost.slug}`} className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="mb-4">
-                  <div className="text-sm uppercase mb-2">FEATURED BLOG</div>
+                  <div className="text-sm uppercase mb-2 border-black border-rounded-lg border-solid p-4">FEATURED BLOG</div>
                   <h2 className="text-3xl md:text-4xl font-light mb-4">{featuredPost.title}</h2>
                   <div className="flex items-center text-sm">
                     <span className="uppercase mr-2">Author:</span>
@@ -109,5 +113,6 @@ export default function BlogPage() {
 
       <ContactFormSection />
     </main>
+    </PageWrapper>
   )
 }
