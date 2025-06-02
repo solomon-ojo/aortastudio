@@ -59,51 +59,45 @@ export default function CustomSoftwareDevelopmentPage() {
     <PageWrapper>
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
-        <section className="bg-black h-[500px] relative overflow-hidden">
-      <div className="container mx-auto px-6 pt-20 pb-20">
-        <div className="max-w-7xl mx-auto">
-          {/* Services label */}
-          <div className="text-sm uppercase tracking-widest mb-8 text-white/60 font-medium">
-            SERVICES
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative">
-            {/* Left column - Title */}
-            <div className="relative z-10">
-              <h1 className="text-6xl lg:text-7xl font-light leading-[0.85] text-white font-serif">
-              Expert IT Consulting
-              </h1>
-            </div>
-            
-            {/* Right column - Description and Yellow Design */}
-            <div className="relative">
-              <p className="text-xl text-white/90 leading-relaxed mb-8 max-w-lg relative z-10 bg-black/50 p-4">
-              From requirement analysis, code review, and quality insurance, to implementation support and best practices - we've got you covered. 
-              Our seasoned team of technology consultants can help you to enhance the efficiency, effectiveness, and success of your software project.
-              </p>
+        <section className="bg-black h-[600px] relative overflow-hidden">
+      {/* Video Background */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src="https://cdn.jsdelivr.net/gh/MarkoGole/itekako-ai/AI-01.1.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
+      
+      {/* Content positioned at bottom with glassmorphism */}
+      <div className="absolute bottom-0 left-0 w-full z-20">
+        <div className="container mx-auto px-6 pb-20">
+          <div className="max-w-7xl mx-auto">
+            {/* Glassmorphism container */}
+            <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
+              {/* Services label */}
+              <div className="text-sm uppercase tracking-widest mb-6 text-white/80 font-medium">
+                SERVICES
+              </div>
               
-              {/* Yellow geometric pattern - exactly as shown in images */}
-              <div className="absolute top-70 right-0 w-[500px] h-[200px]">
-                {/* Main yellow background with precise rectangular pattern */}
-                <div className="w-full h-full bg-yellow-400 relative">
-                  
-                  {/* Top row - alternating black rectangles creating house-like shapes */}
-                  <div className="absolute top-0 left-0 w-24 h-16 bg-black"></div>
-                  <div className="absolute top-0 left-32 w-24 h-16 bg-black"></div>
-                  <div className="absolute top-0 right-32 w-24 h-16 bg-black"></div>
-                  <div className="absolute top-0 right-0 w-24 h-16 bg-black"></div>
-                  
-                  {/* Bottom row - matching pattern */}
-                  <div className="absolute bottom-0 left-0 w-24 h-16 bg-black"></div>
-                  <div className="absolute bottom-0 left-32 w-24 h-16 bg-black"></div>
-                  <div className="absolute bottom-0 right-32 w-24 h-16 bg-black"></div>
-                  <div className="absolute bottom-0 right-0 w-24 h-16 bg-black"></div>
-                  
-                  {/* Center colored rectangles overlaying the pattern */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex gap-6">
-                    <div className="w-20 h-12 bg-gray-500"></div>
-                    <div className="w-20 h-12 bg-teal-400"></div>
-                  </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                {/* Left column - Title */}
+                <div>
+                  <h1 className="text-5xl lg:text-6xl font-light leading-[0.9] text-white font-serif">
+                  Expert IT Consulting                  </h1>
+                </div>
+                
+                {/* Right column - Description */}
+                <div>
+                  <p className="text-lg text-white/90 leading-relaxed max-w-lg">
+                  From requirement analysis, code review, and quality insurance, 
+                  to implementation support and best practices - we've got you covered. 
+                  Our seasoned team of technology consultants can help you to enhance the efficiency, effectiveness, and success of your software project.
+                  </p>
                 </div>
               </div>
             </div>

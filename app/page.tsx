@@ -13,44 +13,59 @@ import ContactFormSection from "@/components/sections/contact-form-section"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen text-white">
       {/* Navbar */}
-      <Navbar />
-
-      {/* Spotify Button */}
+      <div className="relative z-50">
+        <Navbar />
+      </div>
 
       {/* Hero Section */}
-      <HeroSection />
-
-      {/* Clients Section */}
-      <ClientsSection />
+      <div className="bg-black">
+        <HeroSection />
+      </div>
 
       {/* Client Stories Section */}
-      <ClientStoriesSection />
+      <div className="bg-black">
+        <ClientStoriesSection />
+      </div>
 
       {/* Itekako Numbers Section */}
-      <ItekakoNumbersSection />
+      <div className="bg-black">
+        <ItekakoNumbersSection />
+      </div>
 
       {/* What We Do Section */}
-      <WhatWeDoSection />
+      <div className="bg-black">
+        <WhatWeDoSection />
+      </div>
 
       {/* Industries Section */}
-      <IndustriesSection />
+      <div className="bg-black">
+        <IndustriesSection />
+      </div>
 
       {/* How We Work Section */}
-      <HowWeWorkSection />
+      <div className="bg-black">
+        <HowWeWorkSection />
+      </div>
 
       {/* Our Process Section */}
-      <OurProcessSection />
+      <div className="bg-black">
+        <OurProcessSection />
+      </div>
 
       {/* Join Us Section */}
       <JoinUsSection />
 
       {/* Contact Form Section */}
-      <ContactFormSection />
+      <div className="bg-black">
+        <ContactFormSection />
+      </div>
 
       {/* Footer */}
-      <Footer />
+      <div className="bg-black">
+        <Footer />
+      </div>
     </main>
   )
 }
