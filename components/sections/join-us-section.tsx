@@ -29,6 +29,7 @@ export default function JoinUsSection() {
       transition={{ duration: 0.8 }}
     >
       <div className="container mx-auto px-4">
+        <span className="text-black text-5xl space-y-4 m-6 w-22">Join our passionate team, unleash your potential, and be part of something truly awesome</span>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left side images */}
           <div className="lg:col-span-3 space-y-4">
@@ -70,7 +71,7 @@ export default function JoinUsSection() {
               </p>
 
               <motion.a
-                href="/careers"
+                href="/contact"
                 className="inline-flex items-center bg-black text-yellow-300 px-8 py-4 rounded-full hover:bg-gray-800 transition-colors text-lg font-medium"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
