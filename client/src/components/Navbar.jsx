@@ -1,0 +1,188 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa";
+import { LuPlus } from "react-icons/lu";
+import { VscArrowRight } from "react-icons/vsc";
+
+import Container from "./Container";
+import { servicesLinks, subServices } from "../utils/navLinks";
+
+const desktopLinkStyle =
+  " relative text-[13px]   px-2 font-semibold text-white nav-link uppercase flex flex-nowrap whitespace-nowrap";
+
+const Navbar = () => {
+  const [hover, setHover] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  const handleMouseEnter = () => setHover(true);
+  const handleMouseLeave = () => setHover(false);
+
+  return (
+    <header className="bg-black h-[80px] w-full flex flex-col items-center z-50 lg:z-10 fixed top-0 left-0">
+      <Container>
+        <div className="w-full flex justify-between items-center text-white h-full relative">
+          {/* left */}
+          <div className="flex-1 flex items-center">
+            <Link to={"/"}>
+              <span className="text-white font-bold text-xl capitalize">
+                itekako
+              </span>
+            </Link>
+          </div>
+
+          {/* right */}
+          <div className="flex-1 flex items-center ">
+            <nav className="hidden lg:block">
+              <ul className="flex items-center justify-center gap-6 h-full">
+                {/* Services trigger */}
+                <li
+                  onMouseLeave={handleMouseLeave}
+                  onMouseEnter={handleMouseEnter}
+                  className={`${desktopLinkStyle} flex items-center gap-2 cursor-pointer group`}
+                >
+                  <Link to={"/services"}>Services</Link>
+                  <FaChevronDown
+                    color="gray"
+                    className="transition-transform duration-300 group-hover:rotate-180"
+                  />
+                </li>
+
+                {/* Other links */}
+                <li className={desktopLinkStyle}>
+                  <Link to={"/ai-hub"}>AI-hub</Link>
+                </li>
+                <li className={desktopLinkStyle}>
+                  <Link to={"/client-stories"}>Client stories</Link>
+                </li>
+                <li className={desktopLinkStyle}>
+                  <Link to={"/careers"}>careers</Link>
+                </li>
+                <li className={desktopLinkStyle}>
+                  <Link
+                    className="flex flex-nowrap whitespace-nowrap"
+                    to={"/about"}
+                  >
+                    About us
+                  </Link>
+                </li>
+                <li className={desktopLinkStyle}>
+                  <Link to={"/blog"}>blog</Link>
+                </li>
+                <li className={desktopLinkStyle}>
+                  <Link to={"/contact"}>contact</Link>
+                </li>
+              </ul>
+            </nav>
+            <div className=" flex  justify-end lg:hidden  h-full w-full">
+              <div
+                onClick={handleToggle}
+                className=" h-9 w-9 rounded-full flex items-center justify-center border border-gray-200 hover:cursor-pointer"
+              >
+                <LuPlus
+                  size={30}
+                  color="white"
+                  className={`${isOpen && "rotate-[-45deg]"}`}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+
+      {/* mobile nav */}
+
+      <nav
+        className={`${isOpen ? "top-[80px]  " : "top-[-100%]"}
+    fixed left-0 w-full  h-screen bg-black text-white lg:hidden  transition-all duration-700 ease-in-out pb-10`}
+      >
+        <div className=" w-full  h-full flex mt-10">
+          <div className="w-full">
+            <div className="w-full">
+              <h2 className="pl-14 border-b border-gray-800 text-3xl font-semibold pb-2">
+                Services
+              </h2>
+
+              <ul className=" py-2 bg-stone-800/60">
+                {subServices.map((service) => (
+                  <li
+                    key={service.path}
+                    className="py-2 text-lg border-b-[0.25px] border-gray-800"
+                  >
+                    <Link className="pl-14" to={service.path}>
+                      {service.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <ul className="">
+              {servicesLinks.map((service) => (
+                <li
+                  key={service.path}
+                  className="pl-14 border-b border-gray-800 text-2xl font-semibold py-4"
+                >
+                  <Link>{service.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      {/* Full-width dropdown */}
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className={`absolute top-[70px] left-0 w-full bg-black text-white shadow-lg 
+              transition-all duration-700 ease-in-out 
+              ${
+                hover
+                  ? "opacity-100 translate-y-0 visible border-t border-t-gray-800"
+                  : "opacity-0 -translate-y-5 invisible"
+              }`}
+        style={{
+          height: "250px", // Adjust height as needed
+        }}
+      >
+        <Container>
+          <div className="flex justify-center items-center gap-6 h-full w-full mx-auto ">
+            {subServices.map((service, index) => (
+              <Link
+                key={index}
+                to={service.path}
+                className={`h-full flex flex-col justify-between  ${
+                  index === subServices.length - 1
+                    ? ""
+                    : "border-r border-r-gray-800 px-4"
+                }  hover:bg-black transition-colors group  flex-1 gap-3`}
+              >
+                <span className="mt-4 text-start text-lg">{service.name}</span>
+                <span className="flex  items-center justify-between gap-3">
+                  <span className="flex-1 mb-4 pb-4">
+                    <img
+                      src="/radiography.webp"
+                      width={300}
+                      height={300}
+                      alt="icon"
+                      className=""
+                    />
+                  </span>
+                  <VscArrowRight
+                    size={30}
+                    className="flex-1 group-hover:rotate-[-45deg] group-hover:text-green-700 group-hover:transition-all duration-700 ease-in-out"
+                  />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;

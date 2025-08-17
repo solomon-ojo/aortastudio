@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated background wipe effect for animatedbutton */
+.group\/button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #86efac; /* Tailwind green-300 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.group\/button:hover::before {
+  transform: scaleX(1);
+}
+/* For desktop navlinks */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -25px; /* Pushes the border to the bottom of the navbar */
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #16a34a;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/* carousel  */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
