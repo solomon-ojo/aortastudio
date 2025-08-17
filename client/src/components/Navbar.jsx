@@ -164,7 +164,7 @@ const Navbar = () => {
                 <span className="flex  items-center justify-between gap-3">
                   <span className="flex-1 mb-4 pb-4">
                     <img
-                      src="/radiography.webp"
+                      src="/img5.jpg"
                       width={300}
                       height={300}
                       alt="icon"
