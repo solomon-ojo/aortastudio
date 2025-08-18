@@ -138,7 +138,7 @@ const CardCarousel = () => {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px] lg:h-[300px] bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
+                className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
                 onMouseEnter={handleCardEnter}
                 onMouseLeave={handleCardLeave}
                 onMouseMove={handleCardMove}

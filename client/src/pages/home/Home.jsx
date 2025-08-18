@@ -4,6 +4,7 @@ import Partners from "../../components/Partners";
 import OurServices from "../../components/OurServices";
 import CardCarousel from "../../components/CardCarousel";
 import CompanyHistroy from "../../components/CompanyHistroy";
+import WhatWeDo from "../../components/WhatWeDo";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <OurServices />
       <CardCarousel />
       <CompanyHistroy />
+      <WhatWeDo />
     </main>
   );
 };

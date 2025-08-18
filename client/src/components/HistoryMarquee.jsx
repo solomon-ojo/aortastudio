@@ -41,7 +41,7 @@ const MarqueeItem = ({ text, videoSrc }) => (
     </span>
     <video
       src={videoSrc}
-      className=" w-24 lg:w-28 h-28 lg:h-32 object-cover rounded-md"
+      className=" w-24 lg:w-28 h-28 lg:h-32 object-cover "
       autoPlay
       loop
       muted

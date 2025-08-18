@@ -14,7 +14,7 @@ const OurServices = () => {
             <h1 className={headingStyle}>solutions for Fortune 500, SMEs</h1>
             <h1 className={headingStyle}>and startups of all sizes.</h1>
           </div>
-          <div className="flex flex-col lg:flex-row justify-start lg:items-center  gap-8 lg:gap-3  ">
+          <div className="flex flex-col lg:flex-row justify-start lg:items-center  gap-8 lg:gap- relative  ">
             <p className="font-semibold">Check out all client stories</p>
             <AnimatedButton
               bg="relative  bg-lime-300 overflow-hidden px-4 py-1 rounded-full group/button hover:cursor-pointer"
