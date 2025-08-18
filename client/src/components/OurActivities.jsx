@@ -3,9 +3,10 @@ import { SiPaloaltosoftware } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
 import AnimatedButton from "./AnimatedButton";
 import { activityArr } from "../utils/activity";
+import { SiCoinmarketcap } from "react-icons/si";
 
 const divStyle =
-  "w-full flex items-center justify-between gap-4 border-t border-t-gray-200 border-b border-b-gray-200 py-7 hover:cursor-pointer";
+  "w-full flex items-center justify-between gap-4 border-t border-t-gray-200 border-b border-b-gray-200 py-8 hover:cursor-pointer";
 const spanStyle = " text-lg lg:text-2xl font-semibold text-gray-500";
 
 const OurActivities = () => {
@@ -84,7 +85,9 @@ const OurActivities = () => {
                       className="flex items-center justify-between text-black text-lg border-b border-b-black"
                     >
                       <span>{sub.title}</span>
-                      <span>{sub.icon}</span>
+                      <span>
+                        <SiCoinmarketcap size={25} />
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -104,9 +107,9 @@ const OurActivities = () => {
         </div>
 
         {/* Right Panel for lg and up */}
-        <div className="hidden md:flex bg-green-300 md:bg-white flex-[2] items-center w-full h-[522px] px-6 pt-14 overflow-y-auto">
+        <div className="hidden md:flex bg-green-300 md:bg-white flex-[2] items-center w-full h-[508px] px-6 pt-14 overflow-y-auto pb-5 lg:pb-0">
           <div className="w-full h-full pt-5">
-            <h2 className="text-black text-4xl font-semibold mb-4 pb-10">
+            <h2 className="text-black text-4xl font-semibold mb-4 pb-5">
               {activity.title}
             </h2>
             <AnimatedButton
@@ -124,7 +127,9 @@ const OurActivities = () => {
                     className="flex items-center justify-between text-black text-lg border-b border-b-black"
                   >
                     <span>{sub.title}</span>
-                    <span>{sub.icon}</span>
+                    <span>
+                      <SiCoinmarketcap size={25} />
+                    </span>
                   </div>
                 ))}
               </div>

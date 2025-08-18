@@ -5,6 +5,7 @@ import OurServices from "../../components/OurServices";
 import CardCarousel from "../../components/CardCarousel";
 import CompanyHistroy from "../../components/CompanyHistroy";
 import WhatWeDo from "../../components/WhatWeDo";
+import Industries from "../../components/Industries";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <CardCarousel />
       <CompanyHistroy />
       <WhatWeDo />
+      <Industries />
     </main>
   );
 };

@@ -17,6 +17,7 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
+      
     },
     screens: {
       sm: "576px",
