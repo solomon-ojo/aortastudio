@@ -12,7 +12,6 @@ const Hero = () => {
         muted
         playsInline
       />
-
       {/* Overlay text */}
       <div className="relative capitalize z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl mb-4 text-yellow-500">
