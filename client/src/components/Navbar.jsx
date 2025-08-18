@@ -149,7 +149,7 @@ const Navbar = () => {
         }}
       >
         <Container>
-          <div className="flex justify-center items-center gap-6 h-full w-full overflow-y-hidden mx-auto ">
+          <div className="flex justify-center items-center gap-6 h-full w-full overflow-y-hidden overflow-x-hidden mx-auto ">
             {subServices.map((service, index) => (
               <Link
                 key={index}
