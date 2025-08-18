@@ -76,7 +76,6 @@ const CardCarousel = () => {
     }
   };
 
-  // Smooth cursor animation
   useEffect(() => {
     let cursorFrame;
     const animateCursor = () => {
@@ -99,9 +98,9 @@ const CardCarousel = () => {
   }, [animationFrame]);
 
   return (
-    <section className="relative overflow-hidden w-full h-[400px] bg-black z-40 ">
+    <section className="relative overflow-hidden w-full h-[500px] bg-black z-40">
       <Container>
-        <div className="w-full">
+        <div className="w-full relative">
           {/* Yellow circle cursor */}
           {showCursor && (
             <div
@@ -130,7 +129,7 @@ const CardCarousel = () => {
           {/* Card container */}
           <div
             ref={containerRef}
-            className="w-full flex  overflow-x-auto no-scrollbar select-none cursor-grab"
+            className="w-full flex overflow-x-auto no-scrollbar select-none cursor-grab"
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseLeave}
@@ -139,7 +138,7 @@ const CardCarousel = () => {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="flex items-center flex-col justify-center group  w-full sm:w-full md:w-1/2 lg:w-1/4 h-[400px] bg-black hover:bg-lime-900/40  shadow-md border border-gray-800 flex-shrink-0 "
+                className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px] lg:h-[300px] bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
                 onMouseEnter={handleCardEnter}
                 onMouseLeave={handleCardLeave}
                 onMouseMove={handleCardMove}
@@ -148,19 +147,42 @@ const CardCarousel = () => {
                   src={card.image}
                   alt={card.title}
                   draggable={false}
-                  className="w-full h-2/3 object-contain p-4 "
+                  className="w-full h-2/3 object-cover p-4"
                 />
-                <div className="p-2 text-center  text-gray-400 text-xl font-semibold">
+                <div className="p-2 text-center text-gray-400 text-xl font-semibold">
                   {card.title}
                 </div>
                 <div className="w-full pl-5 mb-4">
                   <VscArrowRight
                     size={30}
-                    className=" group-hover:rotate-[-45deg] text-gray-600 group-hover:text-green-700 group-hover:transition-all duration-700 ease-in-out"
+                    className="group-hover:rotate-[-45deg] text-gray-600 group-hover:text-green-700 group-hover:transition-all duration-700 ease-in-out"
                   />
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Navigation Arrows for Medium Screens */}
+          <div className="flex lg:hidden absolute bottom-4 left-0 right-0 justify-between px-4 z-50">
+            <button
+              onClick={() =>
+                containerRef.current.scrollBy({
+                  left: -300,
+                  behavior: "smooth",
+                })
+              }
+              className="bg-gray-800 hover:bg-gray-700 text-white p-2 rounded-full shadow-md"
+            >
+              <RiArrowLeftSLine size={24} />
+            </button>
+            <button
+              onClick={() =>
+                containerRef.current.scrollBy({ left: 300, behavior: "smooth" })
+              }
+              className="bg-gray-800 hover:bg-gray-700 text-white p-2 rounded-full shadow-md"
+            >
+              <RiArrowRightSLine size={24} />
+            </button>
           </div>
         </div>
       </Container>

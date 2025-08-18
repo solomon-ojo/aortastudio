@@ -6,7 +6,7 @@ const headingStyle =
 
 const OurServices = () => {
   return (
-    <section className="w-full h-[400px] flex items-center  bg-black relative z-40  text-white border-b border-b-gray-800">
+    <section className="w-full h-[400px] flex items-center  bg-black relative z-40  text-white ">
       <Container>
         <div className="w-full ">
           <div className="w-full mb-6">
