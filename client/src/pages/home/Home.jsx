@@ -3,6 +3,7 @@ import Hero from "../../components/Hero";
 import Partners from "../../components/Partners";
 import OurServices from "../../components/OurServices";
 import CardCarousel from "../../components/CardCarousel";
+import CompanyHistroy from "../../components/CompanyHistroy";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Partners />
       <OurServices />
       <CardCarousel />
+      <CompanyHistroy />
     </main>
   );
 };
