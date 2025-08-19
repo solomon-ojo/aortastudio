@@ -56,8 +56,10 @@ export const methodologyActivityArr = [
 
     subtitle: [
       { title: "Discovery", icon: "icon1" },
-      { title: "UI/UX Design", icon: "icon2" },
-      { title: "API Integration", icon: "icon3" },
+      {
+        title:
+          "Every project starts with a roundtable with key stakeholders to understand your company’s vision and business goals. We analyze value propositions to form the right team of experts that will bring your solutions to life.",
+      },
     ],
   },
   {
@@ -67,8 +69,10 @@ export const methodologyActivityArr = [
 
     subtitle: [
       { title: "Advisory", icon: "icon1" },
-      { title: "Automation", icon: "icon2" },
-      { title: "Migrations", icon: "icon3" },
+      {
+        title:
+          "Whether you are planning to automate business processes or improve performance, we help you define the right business strategy to build human-centric solutions that will exceed your customers’ expectations.",
+      },
     ],
   },
   {
@@ -78,8 +82,10 @@ export const methodologyActivityArr = [
 
     subtitle: [
       { title: "Design", icon: "icon1" },
-      { title: "Manual testing", icon: "icon2" },
-      { title: "Performance testing", icon: "icon3" },
+      {
+        title:
+          "Leveraging the synergy of our creativity and deep engineering capabilities, our multidisciplinary teams work closely with you to design the right game-changing products that meet evolving customer demand.",
+      },
     ],
   },
   {
@@ -89,8 +95,10 @@ export const methodologyActivityArr = [
 
     subtitle: [
       { title: "Dev and QA", icon: "icon1" },
-      { title: "Digital transformation", icon: "icon2" },
-      { title: "Technical due diligence", icon: "icon3" },
+      {
+        title:
+          "Implementing all the necessary insights and requirements our developer teams have gathered in the previous phases, we deliver disruptive, intuitive and captivating solutions that drive your digital transformation.",
+      },
     ],
   },
   {
@@ -100,8 +108,10 @@ export const methodologyActivityArr = [
 
     subtitle: [
       { title: "Support", icon: "icon1" },
-      { title: "Product & Solution design", icon: "icon2" },
-      { title: "MVP development", icon: "icon3" },
+      {
+        title:
+          "We support your enterprise with scalable solutions every step of the way by providing maintenance plans and enhancing your customers’ ability to stay agile and scale at all times.",
+      },
     ],
   },
 ];
