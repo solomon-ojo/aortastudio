@@ -7,6 +7,10 @@ export default {
         primary: "#0025E8",
         secondary: "#6b7280",
       },
+      fontFamily: {
+        serif: ['"Playfair Display"', "serif"], // or override 'sans' if you prefer
+      },
+
       animation: {
         marquee: "marquee 10s linear infinite",
         cardFloat: "cardFloat 1.5s ease-in-out infinite",
