@@ -6,10 +6,11 @@ import CardCarousel from "../../components/CardCarousel";
 import CompanyHistroy from "../../components/CompanyHistroy";
 import WhatWeDo from "../../components/WhatWeDo";
 import Industries from "../../components/Industries";
+import Methodology from "../../components/Methodology";
 
 const Home = () => {
   return (
-    <main className="relative min-h-screen w-full">
+    <main className="relative min-h-screen w-full ">
       <Hero />
       <Partners />
       <OurServices />
@@ -17,6 +18,7 @@ const Home = () => {
       <CompanyHistroy />
       <WhatWeDo />
       <Industries />
+      <Methodology />
     </main>
   );
 };

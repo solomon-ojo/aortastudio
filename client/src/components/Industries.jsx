@@ -6,7 +6,7 @@ import Card from "./AnimatedCard";
 
 const Industries = () => {
   return (
-    <section className="w-full min-h-screen flex pt-20 bg-sky-100 relative z-40  pb-10">
+    <section className="w-full min-h-screen flex pt-20 bg-sky-100 relative z-40 ">
       <div className="w-full h-full">
         <div className="w-full flex-col h-full flex justify-center items-center">
           <h3 className="text-center text-xs lg:text-base uppercase font-semibold text-gray-700">
@@ -45,11 +45,11 @@ const Industries = () => {
           <h3 className="text-center text-xs  lg:text-base uppercase font-semibold text-gray-700">
             how we work
           </h3>
-          <div className=" text-xl md:text-2xl  lg:text-6xl font-semibold text-gray-700 pt-5">
+          <div className=" text-xl md:text-2xl  lg:text-6xl font-semibold text-gray-700 py-8">
             <h1 className="text-center">We build solutions and grow</h1>
             <h1 className="text-center">partnerships</h1>
           </div>
-          <div className="min-h-screen w-full  hidden lg:flex items-center justify-center  ">
+          <div className="h-full pt-5 w-full flex flex-col  items-center justify-start lg:grid lg:grid-cols-3">
             {cardData.map((card) => (
               <Card
                 key={card.id}
