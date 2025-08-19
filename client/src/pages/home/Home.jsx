@@ -7,6 +7,7 @@ import CompanyHistroy from "../../components/CompanyHistroy";
 import WhatWeDo from "../../components/WhatWeDo";
 import Industries from "../../components/Industries";
 import Methodology from "../../components/Methodology";
+import OurTeam from "../../components/OurTeam";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <WhatWeDo />
       <Industries />
       <Methodology />
+      <OurTeam />
     </main>
   );
 };

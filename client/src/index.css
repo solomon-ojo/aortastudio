@@ -38,6 +38,26 @@
 .group\/activity:hover::before {
   transform: scaleX(1);
 }
+
+/* Join button */
+/* for activity button */
+.group\/join::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(101, 84, 84); /* Tailwind green-300 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.group\/join:hover::before {
+  transform: scaleX(1);
+}
 /* For desktop navlinks */
 .nav-link::after {
   content: "";
@@ -62,4 +82,26 @@
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* For Out team section for home page */
+.center-div {
+  position: relative;
+  z-index: 40;
+}
+
+.left-video,
+.right-video {
+  position: absolute;
+  z-index: 10;
+}
+
+.left-video {
+  top: 25%;
+  left: 0;
+}
+
+.right-video {
+  top: -10px;
+  right: 0;
 }
