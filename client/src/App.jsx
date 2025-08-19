@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Home = React.lazy(() => import("./pages/home/Home"));
 const About = React.lazy(() => import("./pages/about/About"));
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

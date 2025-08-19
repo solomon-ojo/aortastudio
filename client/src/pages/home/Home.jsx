@@ -8,6 +8,7 @@ import WhatWeDo from "../../components/WhatWeDo";
 import Industries from "../../components/Industries";
 import Methodology from "../../components/Methodology";
 import OurTeam from "../../components/OurTeam";
+import ContactSection from "../../components/ContactSection";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Industries />
       <Methodology />
       <OurTeam />
+      <ContactSection />
     </main>
   );
 };
