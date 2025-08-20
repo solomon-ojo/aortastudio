@@ -8,12 +8,12 @@ const headingStyle = "text-xl md:text-3xl lg:text-6xl";
 const OurTeam = () => {
   return (
     <motion.section
-      initial={{ backgroundColor: "#365314" }} // lime-300
-      whileInView={{ backgroundColor: "#FEF08A" }} // yellow-200
+      initial={{ backgroundColor: "#365314", color:"white" }} // lime-300
+      whileInView={{ backgroundColor: "#FEF08A", color:"black" }} // yellow-200
       exit={{ backgroundColor: "#365314" }} // fade back to lime-300
       transition={{ duration: 3 }}
       viewport={{ once: false, amount: 0.3 }}
-      className="w-full min-h-screen flex pt-20 pb-10 relative z-40"
+      className="w-full min-h-screen flex pt-20 pb-10 relative z-40 "
     >
       <Container>
         <motion.div
