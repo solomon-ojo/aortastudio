@@ -1,10 +1,8 @@
 import React from "react";
 import Container from "./Container";
-import { BiLogoFacebookCircle } from "react-icons/bi";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import { quickLinks, services } from "../utils/navLinks";
 import { Link } from "react-router-dom";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   return (
@@ -34,7 +32,9 @@ const Footer = () => {
                       key={service.path}
                       className=" text-sm lg:text-[15px] py-3"
                     >
-                      <Link to={service.path}>{service.name}</Link>
+                      <Link onClick={() => scrollTo(0, 0)} to={service.path}>
+                        {service.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -47,7 +47,9 @@ const Footer = () => {
                     key={link.path}
                     className=" text-sm lg:text-[15px] py-2 lg:py-3"
                   >
-                    <Link to={link.path}>{link.name}</Link>
+                    <Link onClick={() => scrollTo(0, 0)} to={link.path}>
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -57,11 +59,8 @@ const Footer = () => {
           <div className=" flex-1 w-full h-full flex flex-col justify-between pt-10">
             <div className="flex-1 h-full"></div>
             <div className="flex-1 h-full flex lg:justify-end lg:pb-10">
-              <div className="flex items-center gap-6">
-                <FaLinkedin className="text-4xl text-white" />
-                <FaInstagramSquare className="text-4xl text-white" />
-                <BiLogoFacebookCircle className="text-4xl text-white" />
-              </div>
+              {/* social media links */}
+              <SocialLinks className={"flex items-center gap-6"} />
             </div>
           </div>
         </div>

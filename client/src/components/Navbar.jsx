@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import { LuPlus } from "react-icons/lu";
 import { VscArrowRight } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 import Container from "./Container";
-import { servicesLinks, subServices } from "../utils/navLinks";
+import { quickLinks, servicesLinks, subServices } from "../utils/navLinks";
+import SocialLinks from "./SocialLinks";
 
 const desktopLinkStyle =
   " relative text-[13px]   px-2 font-semibold text-white nav-link uppercase flex flex-nowrap whitespace-nowrap";
@@ -13,6 +14,7 @@ const desktopLinkStyle =
 const Navbar = () => {
   const [hover, setHover] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  // const match = useMatch()
 
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
@@ -50,31 +52,14 @@ const Navbar = () => {
                     className="transition-transform duration-300 group-hover:rotate-180"
                   />
                 </li>
-
-                {/* Other links */}
-                <li className={desktopLinkStyle}>
-                  <Link to={"/ai-hub"}>AI-hub</Link>
-                </li>
-                <li className={desktopLinkStyle}>
-                  <Link to={"/client-stories"}>Client stories</Link>
-                </li>
-                <li className={desktopLinkStyle}>
-                  <Link to={"/careers"}>careers</Link>
-                </li>
-                <li className={desktopLinkStyle}>
-                  <Link
-                    className="flex flex-nowrap whitespace-nowrap"
-                    to={"/about"}
-                  >
-                    About us
-                  </Link>
-                </li>
-                <li className={desktopLinkStyle}>
-                  <Link to={"/blog"}>blog</Link>
-                </li>
-                <li className={desktopLinkStyle}>
-                  <Link to={"/contact"}>contact</Link>
-                </li>
+                {/* Desktop links */}
+                {quickLinks.slice(0, quickLinks.length - 1).map((link) => (
+                  <li key={link.path} className={desktopLinkStyle}>
+                    <Link onClick={() => scrollTo(0, 0)} to={link.path}>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
             <div className=" flex  justify-end lg:hidden  h-full w-full">
@@ -112,7 +97,11 @@ const Navbar = () => {
                     key={service.path}
                     className="py-2 text-lg border-b-[0.25px] border-gray-800"
                   >
-                    <Link className="pl-14" to={service.path}>
+                    <Link
+                      onClick={() => scrollTo(0, 0)}
+                      className="pl-14"
+                      to={service.path}
+                    >
                       {service.name}
                     </Link>
                   </li>
@@ -125,10 +114,15 @@ const Navbar = () => {
                   key={service.path}
                   className="pl-14 border-b border-gray-800 text-2xl font-semibold py-4"
                 >
-                  <Link>{service.name}</Link>
+                  <Link onClick={() => scrollTo(0, 0)} to={service.path}>
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
+
+            {/* SOCIAL MEDIA LINKS */}
+            <SocialLinks className={"flex items-center gap-6 pl-14 pt-5"} />
           </div>
         </div>
       </nav>
