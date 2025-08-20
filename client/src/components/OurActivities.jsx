@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { SiPaloaltosoftware } from "react-icons/si";
+import { SiPaloaltosoftware, SiCoinmarketcap } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
 import AnimatedButton from "./AnimatedButton";
 import { activityArr } from "../utils/activity";
-import { SiCoinmarketcap } from "react-icons/si";
 
 const divStyle =
   "w-full flex items-center justify-between gap-4 border-t border-t-gray-200 border-b border-b-gray-200 py-8 hover:cursor-pointer";
-const spanStyle = " text-lg lg:text-2xl font-semibold text-gray-500";
+const spanStyle = "text-lg lg:text-2xl font-semibold text-gray-500";
 
 const OurActivities = () => {
   const [activity, setActivity] = useState(activityArr[0]);
@@ -32,10 +31,10 @@ const OurActivities = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full h-full">
-      <div className="flex md:flex-col lg:flex-row w-full h-full">
+    <div className="w-full min-h-screen">
+      <div className="flex flex-col lg:flex-row items-start w-full h-full">
         {/* Left Panel */}
-        <div className="flex-1 h-full">
+        <div className="flex-1 self-stretch">
           {activityArr.map((item) => (
             <div key={item.id}>
               <div onClick={() => handleActivity(item.id)} className={divStyle}>
@@ -43,7 +42,6 @@ const OurActivities = () => {
                   <SiPaloaltosoftware className="text-2xl lg:text-4xl" />
                   <span className={spanStyle}>{item.title}</span>
                 </div>
-                {/* Cross icon for md and below */}
                 <RxCross2
                   className={`text-2xl transition-transform duration-300 sm:block md:hidden ${
                     activeId === item.id ? "rotate-0" : "-rotate-45"
@@ -51,7 +49,7 @@ const OurActivities = () => {
                 />
               </div>
 
-              {/* Animated scale bar embedded in border-b for lg and up */}
+              {/* Animated scale bar for lg and up */}
               <div className="hidden lg:block relative w-full h-0">
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gray-200 overflow-hidden">
                   <div
@@ -106,8 +104,8 @@ const OurActivities = () => {
           ))}
         </div>
 
-        {/* Right Panel for lg and up */}
-        <div className="hidden md:flex bg-green-300 md:bg-white flex-[2] items-center w-full h-[508px] px-6 pt-14 overflow-y-auto pb-5 lg:pb-0">
+        {/* Right Panel */}
+        <div className="hidden md:flex flex-[2] self-stretch w-full px-6 pt-14 overflow-y-auto pb-5 lg:pb-0 bg-green-300 md:bg-white">
           <div className="w-full h-full pt-5">
             <h2 className="text-black text-4xl font-semibold mb-4 pb-5">
               {activity.title}
