@@ -62,7 +62,7 @@ const OurActivities = () => {
 
               {/* Accordion content for sm and below */}
               <div
-                className={`sm:block md:hidden transition-all duration-300 overflow-hidden ${
+                className={`sm:block md:hidden bg-white transition-all duration-300 overflow-hidden ${
                   activeId === item.id ? "max-h-[600px] py-4 px-6" : "max-h-0"
                 }`}
               >
