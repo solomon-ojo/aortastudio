@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <main className="min-h-screen w-full bg-black pt-20 z-40 text-white">
       <Container>
-        <div className="flex flex-col">
+        <div className="w-full flex flex-col">
           <div className="w-full min-h-[700px] lg:h-screen flex flex-col lg:flex-row justify-center items-center gap-4">
             {/* Text Section */}
             <div className="flex-1 flex items-center h-full w-full">
