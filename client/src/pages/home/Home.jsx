@@ -15,14 +15,24 @@ const Home = () => {
     <main className="relative min-h-screen w-full ">
       <Hero />
       <Partners />
-      <OurServices />
-      <CardCarousel />
+      <OurServices
+        className={
+          "w-full h-[400px] flex items-center  bg-black relative z-40  text-white "
+        }
+      />
+      <CardCarousel
+        className={"relative overflow-hidden w-full h-[500px] bg-black z-40"}
+      />
       <CompanyHistroy />
       <WhatWeDo />
       <Industries />
-      <Methodology />
+      <Methodology className={"w-full min-h-screen bg-black relative z-40"} />
       <OurTeam />
-      <ContactSection />
+      <ContactSection
+        className={
+          "w-full min-h-screen flex py-20 border-b border-gray-300 bg-black relative z-40"
+        }
+      />
     </main>
   );
 };

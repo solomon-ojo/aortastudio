@@ -2,9 +2,9 @@ import React from "react";
 import Container from "./Container";
 import ContactItem from "./ContactItem";
 
-const ContactSection = () => {
+const ContactSection = ({className}) => {
   return (
-    <section className="w-full min-h-screen flex py-20 border-b border-gray-300 bg-black relative z-40">
+    <section className={className}>
       <Container>
         <ContactItem />
       </Container>

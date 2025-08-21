@@ -74,7 +74,7 @@ const cardData = [
 ];
 
 const Card = ({ title, icon, items }) => (
-  <div className="w-full border md:border-gray-200  py-10 p-4 flex flex-col gap-4">
+  <div className=" h-full w-full border md:border-gray-200  py-10 p-4 flex flex-col gap-4">
     {/* Upper Section */}
     <div className=" w-full flex lg:flex-row flex-col    items-center lg:items-start ">
       {/* Icon */}
@@ -100,7 +100,7 @@ const Card = ({ title, icon, items }) => (
 );
 
 const GeneralCapabilityCard = () => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4">
+  <div className=" w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4">
     {cardData.map((card, index) => (
       <Card key={index} {...card} />
     ))}

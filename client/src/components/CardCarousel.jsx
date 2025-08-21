@@ -4,7 +4,7 @@ import Container from "./Container";
 import { VscArrowRight } from "react-icons/vsc";
 import { cards } from "../utils/card";
 
-const CardCarousel = () => {
+const CardCarousel = ({className}) => {
   const containerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -98,7 +98,7 @@ const CardCarousel = () => {
   }, [animationFrame]);
 
   return (
-    <section className="relative overflow-hidden w-full h-[500px] bg-black z-40">
+    <section className={className}>
       <Container>
         <div className="w-full relative">
           {/* Yellow circle cursor */}

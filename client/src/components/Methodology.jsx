@@ -2,9 +2,9 @@ import React from "react";
 import Container from "./Container";
 import MethodologyActivities from "./MethodologyActivities";
 
-const Methodology = () => {
+const Methodology = ({ className }) => {
   return (
-    <section className="w-full min-h-screen bg-black relative z-40">
+    <section className={className}>
       <Container>
         <div className="text-white w-full py-20">
           {/* Desktop View */}
@@ -15,7 +15,7 @@ const Methodology = () => {
           {/* lg to smaller screen */}
           <div className="lg:hidden">
             <h1 className="text-2xl leading-tight">
-              A look into our methodical process
+              A look into our methodical process of software development
             </h1>
           </div>
           <div className="w-full">

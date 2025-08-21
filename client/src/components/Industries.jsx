@@ -1,8 +1,8 @@
 import React from "react";
 import { SiMarketo } from "react-icons/si";
 import IndustryCard from "./IndustryCard";
-import cardData from "../utils/animatedData";
 import Card from "./AnimatedCard";
+import EngineeringProcess from "./EngineeringProcess";
 
 const Industries = () => {
   return (
@@ -41,24 +41,7 @@ const Industries = () => {
           <IndustryCard text={"automotive"} icon={<SiMarketo size={30} />} />
         </div>
 
-        <div className="w-full flex-col h-full flex justify-center items-center mt-20">
-          <h3 className="text-center text-xs  lg:text-base uppercase font-semibold text-gray-700">
-            how we work
-          </h3>
-          <div className=" text-xl md:text-2xl  lg:text-6xl font-semibold text-gray-700 py-8">
-            <h1 className="text-center">We build solutions and grow</h1>
-            <h1 className="text-center">partnerships</h1>
-          </div>
-          <div className="h-full pt-5 w-full flex flex-col  items-center justify-start lg:grid lg:grid-cols-3">
-            {cardData.map((card) => (
-              <Card
-                key={card.id}
-                title={card.title}
-                description={card.description}
-              />
-            ))}
-          </div>
-        </div>
+        <EngineeringProcess />
       </div>
     </section>
   );

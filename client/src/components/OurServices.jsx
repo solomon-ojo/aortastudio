@@ -4,9 +4,9 @@ import AnimatedButton from "./AnimatedButton";
 const headingStyle =
   "text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-white md:py-2";
 
-const OurServices = () => {
+const OurServices = ({ className }) => {
   return (
-    <section className="w-full h-[400px] flex items-center  bg-black relative z-40  text-white ">
+    <section className={className}>
       <Container>
         <div className="w-full ">
           <div className="w-full mb-6">
