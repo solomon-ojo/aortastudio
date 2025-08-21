@@ -5,7 +5,7 @@ import { VscArrowRight } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
 import Container from "./Container";
-import { quickLinks, servicesLinks, subServices } from "../utils/navLinks";
+import { quickLinks, services, servicesLinks } from "../utils/navLinks";
 import SocialLinks from "./SocialLinks";
 
 const desktopLinkStyle =
@@ -92,7 +92,7 @@ const Navbar = () => {
               </h2>
 
               <ul className=" py-2 bg-stone-800/60">
-                {subServices.map((service) => (
+                {services.map((service) => (
                   <li
                     key={service.path}
                     className="py-2 text-lg border-b-[0.25px] border-gray-800"
@@ -143,13 +143,16 @@ const Navbar = () => {
         }}
       >
         <Container>
-          <div className="flex justify-center items-center gap-6 h-full w-full overflow-y-hidden overflow-x-hidden mx-auto ">
-            {subServices.map((service, index) => (
+          <div
+            onClick={handleMouseLeave}
+            className="flex justify-center items-center gap-6 h-full w-full overflow-y-hidden overflow-x-hidden mx-auto "
+          >
+            {services.map((service, index) => (
               <Link
                 key={index}
                 to={service.path}
                 className={`h-full flex flex-col justify-between  ${
-                  index === subServices.length - 1
+                  index === services.length - 1
                     ? ""
                     : "border-r border-r-gray-800 px-4"
                 }  hover:bg-black transition-colors group  flex-1 gap-3`}
