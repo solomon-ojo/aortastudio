@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const CustomServiceHero = () => {
   return (
-    <section className="fixed top-[80px] bg-black left-0 w-full h-[calc(100vh-80px)] lg:top-0 lg:h-screen z-0 overflow-hidden">
+    <section className="fixed top-[80px] bg-black left-0 w-full h-[calc(100vh-80px)] lg:top-0 lg:h-screen  overflow-hidden">
       <Container>
         <div className="w-full  flex flex-col  justify-center">
           <div className="w-full mt-12  text-white  flex items-center flex-col lg:flex-row ">

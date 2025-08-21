@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const SoftwareDevelopments = () => {
   return (
-    <section className="w-full min-h-screen flex pt-20 bg-sky-100 relative z-40   mt-[80vh]  ">
+    <section className="w-full min-h-screen flex pt-20 bg-sky-100 relative    mt-[80vh]  ">
       <Container>
         <div className="w-full h-full">
           <div className="flex flex-col items-center justify-center my-5 py-8">

@@ -81,6 +81,7 @@ const Navbar = () => {
       {/* mobile nav */}
 
       <nav
+      onClick={handleToggle}
         className={`${isOpen ? "top-[80px]  " : "top-[-100%]"}
     fixed left-0 w-full  h-screen bg-black text-white lg:hidden  transition-all duration-700 ease-in-out pb-10`}
       >
