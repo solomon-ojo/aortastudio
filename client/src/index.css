@@ -2,11 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   @apply font-serif;
 }
-
 
 /* Animated background wipe effect for animatedbutton */
 .group\/button::before {

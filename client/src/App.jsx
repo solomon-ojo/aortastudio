@@ -7,6 +7,10 @@ const Home = React.lazy(() => import("./pages/home/Home"));
 const About = React.lazy(() => import("./pages/about/About"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const Blog = React.lazy(() => import("./pages/blog/Blog"));
+const ClientStories = React.lazy(() =>
+  import("./pages/clientStories/ClientStories")
+);
+
 const CustomSoftwareDevelopment = React.lazy(() =>
   import("./pages/services/CustomSoftwareDevelopment")
 );
@@ -23,6 +27,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/client-stories" element={<ClientStories />} />
+
           <Route
             path="/custom-software-development"
             element={<CustomSoftwareDevelopment />}
