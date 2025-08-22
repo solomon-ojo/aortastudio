@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./Container";
 
-const h1Style = "text-6xl  py-1 ";
+const h1Style = "lg:text-6xl  xl:text-7xl py-1 ";
 const ClientStoriesHero = () => {
   return (
     <section className=" h-[460px] lg:h-[650px] w-full bg-sky-100 text-gray-800">

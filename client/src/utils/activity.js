@@ -115,3 +115,18 @@ export const methodologyActivityArr = [
     ],
   },
 ];
+
+export const clientServices = [
+  "Custom software devlopment",
+  "Devops and Migrations",
+  "Software testing and QA",
+  "Consulting",
+  "Building digital products end-to-end",
+  "Media",
+  "Automotive",
+  "eCommerce",
+  "Technology",
+  "Manufacturing",
+  "Healthcare",
+  "Fintech",
+];

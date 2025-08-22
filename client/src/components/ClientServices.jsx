@@ -1,0 +1,22 @@
+import React from "react";
+import Container from "./Container";
+import ServiceButtons from "./ServiceButtons";
+import { clientServices } from "../utils/activity";
+
+const ClientServices = () => {
+  return (
+    <section className="min-h-screen w-full bg-black mt-10">
+      <Container>
+        <div className="w-full h-full pt-5">
+          <div className="w-[80%]  flex items-center flex-wrap gap-5">
+            {clientServices.map((item, index) => (
+              <ServiceButtons key={index} text={item} />
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+};
+
+export default ClientServices;
