@@ -2,6 +2,8 @@ import React from "react";
 import Container from "./Container";
 import ServiceButtons from "./ServiceButtons";
 import { clientServices } from "../utils/activity";
+import ClientCard from "./ClientCard";
+import ContactSection from "./ContactSection";
 
 const ClientServices = () => {
   return (
@@ -13,6 +15,10 @@ const ClientServices = () => {
               <ServiceButtons key={index} text={item} />
             ))}
           </div>
+
+          <ClientCard />
+
+          <ContactSection />
         </div>
       </Container>
     </section>
