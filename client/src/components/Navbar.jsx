@@ -65,7 +65,7 @@ const Navbar = () => {
             <div className=" flex  justify-end lg:hidden  h-full w-full">
               <div
                 onClick={handleToggle}
-                className=" h-9 w-9 rounded-full flex items-center justify-center border border-gray-200 hover:cursor-pointer"
+                className=" h-9 w-9 z-50 rounded-full flex items-center justify-center border border-gray-200 hover:cursor-pointer"
               >
                 <LuPlus
                   size={30}

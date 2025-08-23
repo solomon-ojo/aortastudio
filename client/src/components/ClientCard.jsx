@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { VscArrowRight } from "react-icons/vsc";
 import { cards } from "../utils/card";
+import { Link } from "react-router-dom";
 
 const ClientCard = () => {
   const [hoveredCardId, setHoveredCardId] = useState(null);
 
   return (
     <section className="w-full text-white py-8 pt-12">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  cursor-pointer">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   cursor-pointer">
         {cards.map((card) => (
-          <div
+          <Link
+            onClick={() => scrollTo(0, 0)}
+            to={"/stats-perform"}
             key={card.id}
             onMouseEnter={() => setHoveredCardId(card.id)}
             onMouseLeave={() => setHoveredCardId(null)}
@@ -34,7 +37,7 @@ const ClientCard = () => {
                 }`}
               />
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
