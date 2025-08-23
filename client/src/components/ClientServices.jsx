@@ -18,7 +18,11 @@ const ClientServices = () => {
 
           <ClientCard />
 
-          <ContactSection />
+          <ContactSection
+            className={
+              "w-full min-h-screen flex py-20 border-b border-gray-300 bg-black relative z-40"
+            }
+          />
         </div>
       </Container>
     </section>

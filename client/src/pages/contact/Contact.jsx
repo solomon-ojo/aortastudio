@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../../components/Container";
 import ContactItem from "../../components/ContactItem";
+import ContactSection from "../../components/ContactSection";
 
 const Contact = () => {
   return (
@@ -49,7 +50,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full h-full">
-            <ContactItem />
+            <ContactSection
+              className={
+                "w-full min-h-screen flex py-20 border-b border-gray-300 bg-black relative z-40"
+              }
+            />
           </div>
         </div>
       </Container>
