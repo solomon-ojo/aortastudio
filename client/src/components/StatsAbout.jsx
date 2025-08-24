@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const StatsAbout = () => {
   return (
-    <section className="h-[600px] lg:h-[500px] w-full bg-white text-gray-800">
+    <section className=" h-[1000px] md:h-[600px] lg:h-[500px] w-full bg-white text-gray-800">
       <Container>
         <div className="h-full w-full flex flex-col lg:flex-row items-center gap-4">
           {/* left */}
@@ -12,7 +12,7 @@ const StatsAbout = () => {
             {/* upper */}
             <div className="h-full w-full flex flex-col lg:flex-row items-start lg:items-center gap-4 border-b">
               <div className="">
-                <h2 className="uppercase font-semibold pt-4">services</h2>
+                <h2 className="uppercase font-semibold pt-4 lg:pt-0">services</h2>
               </div>
               <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start sm:items-center lg:items-start gap-4">
                 <StatPerformButtons text={"Custom software development"} />
