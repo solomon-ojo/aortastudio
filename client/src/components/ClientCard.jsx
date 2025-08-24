@@ -12,7 +12,7 @@ const ClientCard = () => {
         {cards.map((card) => (
           <Link
             onClick={() => scrollTo(0, 0)}
-            to={"/stats-perform"}
+            to={"/client-stories/stats-perform"}
             key={card.id}
             onMouseEnter={() => setHoveredCardId(card.id)}
             onMouseLeave={() => setHoveredCardId(null)}

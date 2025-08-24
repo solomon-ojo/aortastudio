@@ -5,8 +5,8 @@ const CustomServiceHero = () => {
   return (
     <section className="fixed top-[80px] bg-black left-0 w-full h-[calc(100vh-80px)] lg:top-0 lg:h-screen  overflow-hidden">
       <Container>
-        <div className="w-full  flex flex-col  justify-center">
-          <div className="w-full mt-12  text-white  flex items-center flex-col lg:flex-row ">
+        <div className="w-full  flex flex-col  justify-center pt-40 sm:pt-0">
+          <div className="w-full mt-12  pt-24 sm:pt-0 text-white  flex items-center flex-col lg:flex-row ">
             <div className="flex-1 w-full h-full ">
               <h1 className=" text-4xl md:text-5xl lg:text-7xl">
                 Custom software development
