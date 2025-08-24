@@ -46,7 +46,7 @@ const Navbar = () => {
                   onMouseEnter={handleMouseEnter}
                   className={`${desktopLinkStyle} flex items-center gap-2 cursor-pointer group`}
                 >
-                  <Link to={"/services"}>Services</Link>
+                  <span>Services</span>
                   <FaChevronDown
                     color="gray"
                     className="transition-transform duration-300 group-hover:rotate-180"
@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* mobile nav */}
 
       <nav
-      onClick={handleToggle}
+        onClick={handleToggle}
         className={`${isOpen ? "top-[80px]  " : "top-[-150%]"}
     fixed left-0 w-full  h-screen bg-black text-white lg:hidden  transition-all duration-700 ease-in-out pb-10`}
       >
