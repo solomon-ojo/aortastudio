@@ -3,7 +3,7 @@ import StatsPerformHero from "../../components/StatsPerformHero";
 import StatsAbout from "../../components/StatsAbout";
 import ContactSection from "../../components/ContactSection";
 
-const StatsPerform = () => {
+const ProjectDetails = () => {
   return (
     <main className="w-full min-h-screen">
       <StatsPerformHero />
@@ -13,4 +13,4 @@ const StatsPerform = () => {
   );
 };
 
-export default StatsPerform;
+export default ProjectDetails;

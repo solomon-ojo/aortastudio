@@ -3,7 +3,7 @@ import ClientStoriesHero from "../../components/ClientStoriesHero";
 import FeaturedStory from "../../components/FeaturedStory";
 import ClientServices from "../../components/ClientServices";
 
-const ClientStories = () => {
+const Projects = () => {
   return (
     <main className="w-full min-h-screen">
       <ClientStoriesHero />
@@ -13,4 +13,4 @@ const ClientStories = () => {
   );
 };
 
-export default ClientStories;
+export default Projects;

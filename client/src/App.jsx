@@ -6,11 +6,11 @@ const Home = React.lazy(() => import("./pages/home/Home"));
 const About = React.lazy(() => import("./pages/about/About"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const Blog = React.lazy(() => import("./pages/blog/Blog"));
-const ClientStories = React.lazy(() =>
-  import("./pages/clientStories/ClientStories")
-);
-const StatsPerform = React.lazy(() =>
-  import("./pages/clientStories/StatsPerform")
+const BlogDetails = React.lazy(() => import("./pages/blog/BlogDetails"));
+
+const Projects = React.lazy(() => import("./pages/projects/Projects"));
+const ProjectDetails = React.lazy(() =>
+  import("./pages/projects/ProjectDetails")
 );
 
 const CustomSoftwareDevelopment = React.lazy(() =>
@@ -29,8 +29,10 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/client-stories" element={<ClientStories />} />
-          <Route path="/client-stories/:id" element={<StatsPerform />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route
             path="/custom-software-development"
             element={<CustomSoftwareDevelopment />}

@@ -30,8 +30,8 @@ export const services = [
 
 export const quickLinks = [
   {
-    name: "Client stories",
-    path: "/client-stories",
+    name: "Projects",
+    path: "/projects",
   },
   {
     name: "AI-HUB",

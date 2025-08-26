@@ -3,20 +3,23 @@ import { VscArrowRight } from "react-icons/vsc";
 import { clientCards } from "../utils/card";
 import { Link } from "react-router-dom";
 
-const ClientCard = () => {
+const OtherBlogs = () => {
   const [hoveredCardId, setHoveredCardId] = useState(null);
 
   return (
-    <section className="w-full text-white py-8 pt-12">
+    <section className="w-full text-gray-900 bg-sky-100">
+      <h1 className="py-2 text-center text-xl sm:text-2xl md:text-4xl lg:text-5xl bg-white">
+        You may also read:
+      </h1>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   cursor-pointer">
-        {clientCards.map((card) => (
+        {clientCards.slice(0, 3).map((card) => (
           <Link
             onClick={() => scrollTo(0, 0)}
-            to={"/projects/project-details"}
+            to={"/blog/blog-details"}
             key={card.id}
             onMouseEnter={() => setHoveredCardId(card.id)}
             onMouseLeave={() => setHoveredCardId(null)}
-            className="flex flex-col items-center justify-between h-[450px] bg-black hover:bg-orange-900/20 shadow-md border border-gray-800"
+            className="flex flex-col items-center justify-between h-[450px] hover:bg-gray-100 shadow-md border border-gray-800"
           >
             <img
               src={card.image}
@@ -44,4 +47,4 @@ const ClientCard = () => {
   );
 };
 
-export default ClientCard;
+export default OtherBlogs;

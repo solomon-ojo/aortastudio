@@ -113,3 +113,54 @@ body {
   top: -10px;
   right: 0;
 }
+
+
+/* Marque style/ moving images in about page */
+
+/* For moving cards */
+
+.marquee-row {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  animation: scroll-left 50s linear infinite;
+}
+
+.marquee-left .marquee-track {
+  animation: scroll-left 50s linear infinite;
+}
+
+.marquee-right .marquee-track {
+  animation: scroll-right 50s linear infinite;
+}
+
+/* Card styling */
+.marquee-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  margin-right: 1rem;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
