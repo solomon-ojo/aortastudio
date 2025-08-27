@@ -4,9 +4,9 @@ const logos = ["unity", "forsta", "onedrop", "borda", "toolchain", "blockparty",
 
 const CardMarquee = () => {
   return (
-    <div className="w-full overflow-hidden ">
+    <div className="w-full overflow-hidden  ">
       {/* Top Row */}
-      <div className="marquee-row marquee-left">
+      <div className="marquee-row marquee-left ">
         <div className="marquee-track">
           {[...logos, ...logos].map((text, i) => (
             <div key={`top-${i}`} className="marquee-card">

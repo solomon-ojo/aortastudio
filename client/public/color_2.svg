@@ -1,0 +1,24 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="black" />
+
+  <!-- Circles -->
+  <circle cx="50" cy="50" r="30" fill="orange" />
+  <circle cx="450" cy="80" r="25" fill="blue" />
+  <circle cx="400" cy="150" r="20" fill="green" />
+  <circle cx="100" cy="400" r="15" fill="lightblue" />
+
+  <!-- Squares -->
+  <rect x="300" y="200" width="40" height="40" fill="red" />
+  <rect x="50" y="350" width="40" height="40" fill="blue" />
+  <rect x="420" y="420" width="40" height="40" fill="orange" />
+
+  <!-- Triangles -->
+  <polygon points="420,100 440,140 400,140" fill="pink" />
+  <polygon points="150,250 170,290 130,290" fill="orange" />
+  <polygon points="350,450 370,490 330,490" fill="green" />
+
+  <!-- Rectangles -->
+  <rect x="200" y="50" width="80" height="20" fill="blue" />
+  <rect x="100" y="300" width="100" height="20" fill="green" />
+  
+</svg>

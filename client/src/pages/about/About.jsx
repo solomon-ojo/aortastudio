@@ -2,6 +2,8 @@ import React from "react";
 import AboutHero from "../../components/AboutHero";
 import OurStory from "../../components/OurStory";
 import AboutClientStories from "../../components/AboutClientStories";
+import AboutMethodology from "../../components/AboutMethodology";
+import OurMission from "../../components/OurMission";
 
 const About = () => {
   return (
@@ -9,6 +11,10 @@ const About = () => {
       <AboutHero />
       <OurStory />
       <AboutClientStories />
+      <div className="w-full relative ">
+        <AboutMethodology />
+        <OurMission />
+      </div>
     </main>
   );
 };

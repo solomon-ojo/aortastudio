@@ -1,13 +1,20 @@
 import React from "react";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const SocialLinks = ({className}) => {
+const SocialLinks = ({ className }) => {
   return (
     <div className={className}>
-      <FaLinkedin className="text-4xl text-white" />
-      <FaInstagramSquare className="text-4xl text-white" />
-      <BiLogoFacebookCircle className="text-4xl text-white" />
+      <Link to={"#"}>
+        <FaLinkedin className="text-4xl text-white" />
+      </Link>{" "}
+      <Link to={"#"}>
+        <FaInstagramSquare className="text-4xl text-white" />
+      </Link>{" "}
+      <Link to={"#"}>
+        <BiLogoFacebookCircle className="text-4xl text-white" />
+      </Link>{" "}
     </div>
   );
 };
