@@ -1,7 +1,8 @@
 export const servicesLinks = [
   { name: "AI-HUB", path: "/ai-hub" },
   { name: "Client stories", path: "/client-stories" },
-  { name: "Careers", path: "/careers" },
+  { name: "About", path: "/about" },
+  { name: "Blog", path: "/blog" },
 ];
 
 // Links for subservices
@@ -37,10 +38,7 @@ export const quickLinks = [
     name: "AI-HUB",
     path: "/ai-hub",
   },
-  {
-    name: "Careers",
-    path: "/careers",
-  },
+
   {
     name: "About us",
     path: "/about",

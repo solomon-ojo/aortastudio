@@ -3,9 +3,9 @@ import Container from "./Container";
 
 const OurMission = () => {
   return (
-    <section className="relative z-40 h-screen w-full bg-white">
+    <section className="relative z-40 h-screen w-full bg-white ">
       <Container>
-        <div className="w-full h-full  flex flex-col lg:flex-row">
+        <div className="w-full h-full  flex flex-col lg:flex-row border-b border-b-gray-300">
           {/* left */}
           <div className="flex-1 h-full flex items-center pt-20">
             <div className="text-sm md:text-base">

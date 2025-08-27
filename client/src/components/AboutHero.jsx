@@ -15,7 +15,7 @@ const AboutHero = () => {
       {/* Overlay text */}
       <div className="relative capitalize z-10 flex flex-col items-center justify-between  h-full text-white text-center ">
         {/* upper div */}
-        <div className="h-2/3">up</div>
+        <div className="h-2/3"></div>
         {/* lower div */}
         <div className=" w-full h-1/3 bg-gray-400/60 backdrop-blur-md flex flex-col justify-center ">
           <h1 className=" text-xl md:text-4xl lg:text-6xl">

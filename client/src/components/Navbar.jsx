@@ -85,7 +85,7 @@ const Navbar = () => {
         className={`${isOpen ? "top-[80px]  " : "top-[-150%]"}
     fixed left-0 w-full  h-screen bg-black text-white lg:hidden  transition-all duration-700 ease-in-out pb-10`}
       >
-        <div className=" w-full  h-full flex mt-10">
+        <div className=" w-full  h-full flex mt-2">
           <div className="w-full">
             <div className="w-full">
               <h2 className="pl-14 border-b border-gray-800 text-xl sm:text-3xl font-semibold pb-2">
@@ -96,7 +96,7 @@ const Navbar = () => {
                 {services.map((service) => (
                   <li
                     key={service.path}
-                    className="py-2 text-sm sm:text-lg border-b-[0.25px] border-gray-800"
+                    className=" text-sm sm:text-lg border-b-[0.25px] border-gray-800"
                   >
                     <Link
                       onClick={() => scrollTo(0, 0)}
@@ -113,7 +113,7 @@ const Navbar = () => {
               {servicesLinks.map((service) => (
                 <li
                   key={service.path}
-                  className="pl-14 border-b border-gray-800 text-lg sm:text-2xl font-semibold py-[2px] sm:py-4"
+                  className="pl-14 border-b border-gray-800 text-lg sm:text-2xl font-semibold py-[2px] sm:py-4 my-3"
                 >
                   <Link onClick={() => scrollTo(0, 0)} to={service.path}>
                     {service.name}
