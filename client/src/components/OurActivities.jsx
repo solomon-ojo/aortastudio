@@ -92,7 +92,7 @@ const OurActivities = () => {
                 <div className="mt-6">
                   <video
                     className="w-[100px] h-[100px] object-cover rounded-md"
-                    src="https://www.w3schools.com/howto/rain.mp4"
+                    src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
                     autoPlay
                     loop
                     muted
@@ -135,7 +135,7 @@ const OurActivities = () => {
                 <div className="flex justify-end">
                   <video
                     className="absolute top-0 right-10 w-[100px] h-[100px] object-cover"
-                    src="https://www.w3schools.com/howto/rain.mp4"
+                    src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
                     autoPlay
                     loop
                     muted

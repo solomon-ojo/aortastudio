@@ -8,8 +8,8 @@ const headingStyle = "text-xl md:text-3xl lg:text-6xl";
 const OurTeam = () => {
   return (
     <motion.section
-      initial={{ backgroundColor: "#365314", color:"white" }} // lime-300
-      whileInView={{ backgroundColor: "#FEF08A", color:"black" }} // yellow-200
+      initial={{ backgroundColor: "#365314", color: "white" }} // lime-300
+      whileInView={{ backgroundColor: "#FEF08A", color: "black" }} // yellow-200
       exit={{ backgroundColor: "#365314" }} // fade back to lime-300
       transition={{ duration: 3 }}
       viewport={{ once: false, amount: 0.3 }}
@@ -34,7 +34,7 @@ const OurTeam = () => {
             <div className="hidden md:block absolute z-10 h-[200px] lg:h-[250px] w-[150px] lg:w-[250px] left-0 top-1/4 lg:top-1/3">
               <video
                 className="w-full h-full object-cover"
-                src="https://www.w3schools.com/howto/rain.mp4"
+                src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
                 autoPlay
                 loop
                 muted
@@ -48,7 +48,7 @@ const OurTeam = () => {
                 <div className="flex items-center justify-center h-full flex-1">
                   <video
                     className="w-full h-full object-cover"
-                    src="https://www.w3schools.com/howto/rain.mp4"
+                    src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
                     autoPlay
                     loop
                     muted
@@ -78,7 +78,7 @@ const OurTeam = () => {
             <div className="absolute z-10 h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] right-0 top-[-10px] lg:top-[-40px]">
               <video
                 className="w-full h-full object-cover"
-                src="https://www.w3schools.com/howto/rain.mp4"
+                src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
                 autoPlay
                 loop
                 muted
@@ -91,7 +91,7 @@ const OurTeam = () => {
             <div className="flex justify-end sm:justify-center items-center w-[120px] lg:w-[200px] h-[100px] lg:h-[150px]">
               <video
                 className="w-full h-full object-cover"
-                src="https://www.w3schools.com/howto/rain.mp4"
+                src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
                 autoPlay
                 loop
                 muted

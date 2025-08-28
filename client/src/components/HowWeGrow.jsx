@@ -22,14 +22,12 @@ const HowWeGrow = () => {
         viewport={{ once: false }}
         className="w-full h-full px-10 pt-5"
       >
-       
-
         <div className="relative w-full h-full mt-10 pt-10 flex justify-center items-center">
           {/* Left Image */}
           <div className="hidden md:block absolute z-10 h-[200px] lg:h-[250px] w-[150px] lg:w-[250px] left-0 top-1/4 lg:top-1/3">
             <video
               className="w-full h-full object-cover"
-              src="https://www.w3schools.com/howto/rain.mp4"
+              src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
               autoPlay
               loop
               muted
@@ -40,7 +38,6 @@ const HowWeGrow = () => {
           {/* Center Div with translucent background */}
           <div className="center-div relative z-40 w-full md:w-[80%] lg:w-[67%] h-[500px] flex items-center justify-center border-[0.5px] border-gray-500 bg-sky-200/20 backdrop-blur-md">
             <div className="w-full md:w-[84%] h-[75%] px-4 md:px-0 flex flex-col md:flex-row justify-between items-center gap-5">
-             
               <div className="flex-1 h-full w-full">
                 <p className="text-xl md:text-3xl lg:text-5xl xl:text-6xl text-center  py-2">
                   Curious to explore how we
@@ -67,7 +64,7 @@ const HowWeGrow = () => {
           <div className="absolute z-10 h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] right-0 top-[-10px] lg:top-[-40px]">
             <video
               className="w-full h-full object-cover"
-              src="https://www.w3schools.com/howto/rain.mp4"
+              src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
               autoPlay
               loop
               muted
@@ -80,7 +77,7 @@ const HowWeGrow = () => {
           <div className="flex justify-end sm:justify-center items-center w-[120px] lg:w-[200px] h-[100px] lg:h-[150px]">
             <video
               className="w-full h-full object-cover"
-              src="https://www.w3schools.com/howto/rain.mp4"
+              src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
               autoPlay
               loop
               muted

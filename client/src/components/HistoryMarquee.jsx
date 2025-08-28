@@ -17,19 +17,19 @@ const MarqueeContent = () => (
   <>
     <MarqueeItem
       text="200+ Projects"
-      videoSrc="https://www.w3schools.com/howto/rain.mp4"
+      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
     />
     <MarqueeItem
       text="150+ Employers"
-      videoSrc="https://www.w3schools.com/howto/rain.mp4"
+      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
     />
     <MarqueeItem
       text="15+ Years"
-      videoSrc="https://www.w3schools.com/howto/rain.mp4"
+      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
     />
     <MarqueeItem
       text="90+ Clients"
-      videoSrc="https://www.w3schools.com/howto/rain.mp4"
+      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
     />
   </>
 );
