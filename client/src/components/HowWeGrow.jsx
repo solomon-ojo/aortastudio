@@ -3,8 +3,6 @@ import Container from "./Container";
 import AnimatedButton from "./AnimatedButton";
 import { motion } from "framer-motion";
 
-const headingStyle = "text-xl md:text-3xl lg:text-6xl";
-
 const HowWeGrow = () => {
   return (
     <motion.section
