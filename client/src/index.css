@@ -114,7 +114,6 @@ body {
   right: 0;
 }
 
-
 /* Marque style/ moving images in about page */
 
 /* For moving cards */
@@ -163,5 +162,13 @@ body {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+/* for About team section */
+@media (max-width: 767px) {
+  .about-team {
+    background-color: #000 !important;
+    color: white !important;
   }
 }

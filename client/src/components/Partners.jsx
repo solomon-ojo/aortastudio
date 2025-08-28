@@ -13,7 +13,7 @@ const partnerLogos = [
 ];
 const Partners = () => {
   return (
-    <section className="relative z-40  pt-20 h-[400px] w-full bg-black mt-[100vh] border-b border-b-gray-800 flex justify-center items-center  ">
+    <section className="relative z-40  pt-20 h-[450px] w-full bg-black mt-[100vh] border-b border-b-gray-800 flex justify-center items-center  ">
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 ">
           {partnerLogos.map((item, index) => (

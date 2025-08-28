@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const OurMission = () => {
   return (
-    <section className="relative z-40 h-screen w-full bg-white ">
+    <section className="relative z-40 h-[800px] lg:h-screen  w-full bg-white ">
       <Container>
         <div className="w-full h-full  flex flex-col lg:flex-row border-b border-b-gray-300">
           {/* left */}

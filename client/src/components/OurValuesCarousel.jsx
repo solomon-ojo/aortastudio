@@ -99,93 +99,68 @@ const OurValuesCarousel = ({ className }) => {
 
   return (
     <section className={className}>
-      <Container>
-        <div className="w-full relative">
-          {/* Yellow circle cursor */}
-          {showCursor && (
-            <div
-              className="hidden lg:block fixed z-50 pointer-events-none transition-transform duration-300"
-              style={{
-                top: cursorPos.y - 50,
-                left: cursorPos.x - 50,
-                width: 100,
-                height: 100,
-                borderRadius: "50%",
-                backgroundColor: "yellow",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "12px",
-                fontWeight: "bold",
-                color: "black",
-              }}
-            >
-              <RiArrowLeftSLine size={20} />
-              DRAG
-              <RiArrowRightSLine size={20} />
-            </div>
-          )}
-
-          {/* Card container */}
+      <div className="w-full relative">
+        {/* Yellow circle cursor */}
+        {showCursor && (
           <div
-            ref={containerRef}
-            className="w-full flex overflow-x-auto no-scrollbar select-none cursor-grab"
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseLeave}
-            onMouseMove={handleMouseMove}
+            className="hidden lg:block fixed z-50 pointer-events-none transition-transform duration-300"
+            style={{
+              top: cursorPos.y - 50,
+              left: cursorPos.x - 50,
+              width: 100,
+              height: 100,
+              borderRadius: "50%",
+              backgroundColor: "yellow",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "12px",
+              fontWeight: "bold",
+              color: "black",
+            }}
           >
-            {cards.slice(0,8).map((card) => (
-              <div
-                key={card.id}
-                className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-white shadow-md border border-gray-300 flex-shrink-0"
-                onMouseEnter={handleCardEnter}
-                onMouseLeave={handleCardLeave}
-                onMouseMove={handleCardMove}
-              >
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  draggable={false}
-                  className="w-full h-2/3 object-cover p-4"
-                />
-                <div className="p-2 text-center text-gray-400 text-xl font-semibold">
-                  {card.title}
-                </div>
-                <div className="w-full pl-5 mb-4">
-                  <VscArrowRight
-                    size={30}
-                    className="group-hover:rotate-[-45deg] text-gray-800  group-hover:transition-all duration-700 ease-in-out"
-                  />
-                </div>
-              </div>
-            ))}
+            <RiArrowLeftSLine size={20} />
+            DRAG
+            <RiArrowRightSLine size={20} />
           </div>
+        )}
 
-          {/* Navigation Arrows for Medium Screens */}
-          {/* <div className="flex lg:hidden absolute bottom-4 left-0 right-0 justify-between px-4 z-50">
-            <button
-              onClick={() =>
-                containerRef.current.scrollBy({
-                  left: -300,
-                  behavior: "smooth",
-                })
-              }
-              className="bg-gray-800  text-white p-2 rounded-full shadow-md"
+        {/* Card container */}
+        <div
+          ref={containerRef}
+          className="w-full flex overflow-x-auto no-scrollbar select-none cursor-grab bg-green-400"
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseLeave}
+          onMouseMove={handleMouseMove}
+        >
+          {cards.slice(0, 8).map((card) => (
+            <div
+              key={card.id}
+              className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-white shadow-md border border-gray-300 flex-shrink-0"
+              onMouseEnter={handleCardEnter}
+              onMouseLeave={handleCardLeave}
+              onMouseMove={handleCardMove}
             >
-              <RiArrowLeftSLine size={24} />
-            </button>
-            <button
-              onClick={() =>
-                containerRef.current.scrollBy({ left: 300, behavior: "smooth" })
-              }
-              className="bg-gray-800  text-white p-2 rounded-full shadow-md"
-            >
-              <RiArrowRightSLine size={24} />
-            </button>
-          </div> */}
+              <img
+                src={card.image}
+                alt={card.title}
+                draggable={false}
+                className="w-full h-2/3 object-cover p-4"
+              />
+              <div className="p-2 text-center text-gray-400 text-xl font-semibold">
+                {card.title}
+              </div>
+              <div className="w-full pl-5 mb-4">
+                <VscArrowRight
+                  size={30}
+                  className="group-hover:rotate-[-45deg] text-gray-800  group-hover:transition-all duration-700 ease-in-out"
+                />
+              </div>
+            </div>
+          ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

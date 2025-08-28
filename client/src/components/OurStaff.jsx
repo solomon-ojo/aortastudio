@@ -4,17 +4,15 @@ import AnimatedButton from "./AnimatedButton";
 import { motion } from "framer-motion";
 import TeamCard from "./TeamCard";
 
-const headingStyle = "text-xl md:text-3xl lg:text-6xl";
-
 const OurStaff = () => {
   return (
     <motion.section
-      initial={{ backgroundColor: "#6B7280", color: "white" }} // lime-300
-      whileInView={{ backgroundColor: "#000000", color: "black" }} // yellow-200
-      exit={{ backgroundColor: "#6B7280" }} // fade back to lime-300
+      initial={{ backgroundColor: "#6B7280", color: "white" }} // gray-500
+      whileInView={{ backgroundColor: "#000000", color: "black" }} // black
+      exit={{ backgroundColor: "#6B7280" }} // fade back gray-500
       transition={{ duration: 3 }}
       viewport={{ once: false, amount: 0.3 }}
-      className="w-full min-h-screen flex pb-10 relative z-40 "
+      className="w-full min-h-screen flex pb-10 relative z-40 about-team "
     >
       <Container>
         <motion.div
