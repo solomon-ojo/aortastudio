@@ -12,7 +12,9 @@ const Footer = () => {
           {/* first */}
           <div className=" flex-1 w-full h-full flex flex-col  sm:flex-row lg:flex-col justify-between gap-4  py-10">
             <div className="flex-1">
-              <span className="text-4xl font-semibold">Itekako</span>
+              <Link onClick={() => scrollTo(0, 0)} to={"/"}>
+                <span className="text-4xl font-semibold">Itekako</span>
+              </Link>{" "}
             </div>
             <div className="flex-1">
               <span className=" text-sm lg:text-[15px] ">

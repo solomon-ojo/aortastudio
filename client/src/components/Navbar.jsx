@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="w-full flex justify-between items-center text-white h-full relative">
           {/* left */}
           <div className="flex-1 flex items-center">
-            <Link to={"/"}>
+            <Link onClick={() => scrollTo(0, 0)} to={"/"}>
               <span className="text-white font-bold text-xl capitalize">
                 itekako
               </span>
