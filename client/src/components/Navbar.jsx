@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
 
           {/* right */}
-          <div className="flex-1 flex items-center ">
+          <div className="flex-1 flex justify-end items-center ">
             <nav className="hidden lg:block">
               <ul className="flex items-center justify-center gap-6 h-full">
                 {/* Services trigger */}
@@ -47,10 +47,10 @@ const Navbar = () => {
                   className={`${desktopLinkStyle} flex items-center gap-2 cursor-pointer group`}
                 >
                   <Link to={"/custom-software-development"}>Services</Link>
-                  <FaChevronDown
+                  {/* <FaChevronDown
                     color="gray"
                     className="transition-transform duration-300 group-hover:rotate-180"
-                  />
+                  /> */}
                 </li>
                 {/* Desktop links */}
                 {quickLinks.slice(0, quickLinks.length - 1).map((link) => (
