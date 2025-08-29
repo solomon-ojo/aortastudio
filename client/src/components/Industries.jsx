@@ -1,5 +1,11 @@
 import React from "react";
 import { SiMarketo } from "react-icons/si";
+import { MdTempleHindu } from "react-icons/md";
+import { SiZedindustries } from "react-icons/si";
+import { PiCornersInDuotone } from "react-icons/pi";
+import { SiInductiveautomation } from "react-icons/si";
+import { PiTrainDuotone } from "react-icons/pi";
+
 import IndustryCard from "./IndustryCard";
 import Card from "./AnimatedCard";
 import EngineeringProcess from "./EngineeringProcess";
@@ -25,20 +31,50 @@ const Industries = () => {
         {/* desktop card */}
         <div className="w-full h-full lg:flex items-center pt-10 hidden">
           <IndustryCard text={"Fintech"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"Healthcare "} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"manufacturing"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"technology"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"ecommerrce"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"automotive"} icon={<SiMarketo size={30} />} />
+          <IndustryCard
+            text={"Healthcare "}
+            icon={<MdTempleHindu size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"manufacturing"}
+            icon={<SiZedindustries size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"technology"}
+            icon={<PiCornersInDuotone size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"ecommerrce"}
+            icon={<SiInductiveautomation size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"automotive"}
+            icon={<PiTrainDuotone size={30} />}
+          />
         </div>
         {/* small to medium card */}
         <div className="w-full h-full grid grid-cols-2 pt-10 lg:hidden">
           <IndustryCard text={"Fintech"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"Healthcare "} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"manufacturing"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"technology"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"ecommerrce"} icon={<SiMarketo size={30} />} />{" "}
-          <IndustryCard text={"automotive"} icon={<SiMarketo size={30} />} />
+          <IndustryCard
+            text={"Healthcare "}
+            icon={<MdTempleHindu size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"manufacturing"}
+            icon={<SiZedindustries size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"technology"}
+            icon={<PiCornersInDuotone size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"ecommerrce"}
+            icon={<SiInductiveautomation size={30} />}
+          />{" "}
+          <IndustryCard
+            text={"automotive"}
+            icon={<PiTrainDuotone size={30} />}
+          />
         </div>
 
         <EngineeringProcess />

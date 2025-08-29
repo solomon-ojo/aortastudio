@@ -4,14 +4,14 @@ import CardMarquee from "./CardMarquee";
 
 const OurStory = () => {
   return (
-    <section className="relative z-40  h-screen w-full bg-white text-black mt-[100vh]  ">
+    <section className="relative z-40 h-[400px]  lg:h-screen w-full bg-white text-black mt-[100vh]  ">
       <Container>
         <div className="w-full h-full flex flex-col justify-between">
           {/* upper div */}
           <div className="w-full flex-1 flex flex-col lg:flex-row  ">
             {/* left */}
             <div className=" w-full h-full flex items-center">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl py-2 font-semibold">
                 Our Story
               </h1>
             </div>

@@ -1,17 +1,11 @@
 import React from "react";
+import Video from "./Video";
 
 const AboutHero = () => {
   return (
     <section className="fixed top-[80px] left-0 w-full h-[calc(100vh-80px)] lg:top-0 lg:h-screen z-0 overflow-hidden">
       {/* Live video background */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
+      <Video className={"absolute top-0 left-0 w-full h-full object-cover"} />
       {/* Overlay text */}
       <div className="relative capitalize z-10 flex flex-col items-center justify-between  h-full text-white text-center ">
         {/* upper div */}

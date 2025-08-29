@@ -2,11 +2,68 @@ import React, { useEffect, useState } from "react";
 import { SiPaloaltosoftware, SiCoinmarketcap } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
 import AnimatedButton from "./AnimatedButton";
-import { activityArr } from "../utils/activity";
+import Video from "./Video";
 
 const divStyle =
   "w-full flex items-center justify-between gap-4 border-t border-t-gray-200 border-b border-b-gray-200 py-8 hover:cursor-pointer";
-const spanStyle = "text-lg lg:text-2xl font-semibold text-gray-500";
+const spanStyle = "text-sm md:text-lg lg:text-2xl font-semibold text-gray-500";
+
+const activityArr = [
+  {
+    id: 1,
+    title: "Custom software development",
+    sideIcon: "/we_1.svg",
+    subtitle: [
+      { title: "Front-end and back-end development", icon: "/icon_1.svg" },
+      { title: "UI/UX Design", icon: "/icon_3.svg" },
+      { title: "API Integration", icon: "/icon_6.svg" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Devops and migrations",
+    sideIcon: "/we_2.svg",
+
+    subtitle: [
+      { title: "Assessment", icon: "/icon_5.svg" },
+      { title: "Automation", icon: "/icon_1.svg" },
+      { title: "Migrations", icon: "/icon_2.svg" },
+    ],
+  },
+  {
+    id: 3,
+    title: "Software testing and QA",
+    sideIcon: "/we_3.svg",
+
+    subtitle: [
+      { title: "Automated testing", icon: "/icon_3.svg" },
+      { title: "Manual testing", icon: "/icon_1.svg" },
+      { title: "Performance testing", icon: "/icon_8.svg" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Consulting",
+    sideIcon: "/we_4.svg",
+
+    subtitle: [
+      { title: "Project specification development", icon: "/icon_1.svg" },
+      { title: "Digital transformation", icon: "/icon_2.svg" },
+      { title: "Technical due diligence", icon: "/icon_7.svg" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Building digital products end-to-end",
+    sideIcon: "/we_5.svg",
+
+    subtitle: [
+      { title: "Conceptualization & Prototyping", icon: "/icon_2.svg" },
+      { title: "Product & Solution design", icon: "/icon_1.svg" },
+      { title: "MVP development", icon: "/icon_3.svg" },
+    ],
+  },
+];
 
 const OurActivities = () => {
   const [activity, setActivity] = useState(activityArr[0]);
@@ -39,7 +96,14 @@ const OurActivities = () => {
             <div key={item.id}>
               <div onClick={() => handleActivity(item.id)} className={divStyle}>
                 <div className="flex items-center gap-4">
-                  <SiPaloaltosoftware className="text-2xl lg:text-4xl" />
+                  {
+                    <img
+                      src={item.sideIcon}
+                      alt="icosn"
+                      className="w-5 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                    />
+                  }
+                  {/* <SiPaloaltosoftware className="text-2xl lg:text-4xl" /> */}
                   <span className={spanStyle}>{item.title}</span>
                 </div>
                 <RxCross2
@@ -62,7 +126,7 @@ const OurActivities = () => {
 
               {/* Accordion content for sm and below */}
               <div
-                className={`sm:block md:hidden bg-white transition-all duration-300 overflow-hidden ${
+                className={`sm:block md:hidden bg-sky-200 transition-all duration-300 overflow-hidden ${
                   activeId === item.id ? "max-h-[600px] py-4 px-6" : "max-h-0"
                 }`}
               >
@@ -84,19 +148,14 @@ const OurActivities = () => {
                     >
                       <span>{sub.title}</span>
                       <span>
-                        <SiCoinmarketcap size={25} />
+                        <img src={sub.icon} alt="icon" className="" />
                       </span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-6">
-                  <video
-                    className="w-[100px] h-[100px] object-cover rounded-md"
-                    src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                  <Video
+                    className={"w-[100px] h-[100px] object-cover rounded-md"}
                   />
                 </div>
               </div>
@@ -126,20 +185,17 @@ const OurActivities = () => {
                   >
                     <span>{sub.title}</span>
                     <span>
-                      <SiCoinmarketcap size={25} />
+                      <img src={sub.icon} alt="icon" className="" />
                     </span>
                   </div>
                 ))}
               </div>
               <div className="flex-1 flex-shrink-0 relative">
                 <div className="flex justify-end">
-                  <video
-                    className="absolute top-0 right-10 w-[100px] h-[100px] object-cover"
-                    src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                  <Video
+                    className={
+                      "absolute top-0 right-10 w-[100px] h-[100px] object-cover"
+                    }
                   />
                 </div>
               </div>

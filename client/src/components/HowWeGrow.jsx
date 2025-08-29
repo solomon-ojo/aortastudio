@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./Container";
 import AnimatedButton from "./AnimatedButton";
 import { motion } from "framer-motion";
+import Video from "./Video";
 
 const HowWeGrow = () => {
   return (
@@ -23,14 +24,7 @@ const HowWeGrow = () => {
         <div className="relative w-full h-full mt-10 pt-10 flex justify-center items-center">
           {/* Left Image */}
           <div className="hidden md:block absolute z-10 h-[200px] lg:h-[250px] w-[150px] lg:w-[250px] left-0 top-1/4 lg:top-1/3">
-            <video
-              className="w-full h-full object-cover"
-              src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+            <Video className={"w-full h-full object-cover"} />
           </div>
 
           {/* Center Div with translucent background */}
@@ -60,27 +54,13 @@ const HowWeGrow = () => {
 
           {/* Right Image */}
           <div className="absolute z-10 h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] right-0 top-[-10px] lg:top-[-40px]">
-            <video
-              className="w-full h-full object-cover"
-              src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+            <Video className={"w-full h-full object-cover"} />
           </div>
         </div>
 
         <div className="w-full flex justify-center mt-20 pt-10">
           <div className="flex justify-end sm:justify-center items-center w-[120px] lg:w-[200px] h-[100px] lg:h-[150px]">
-            <video
-              className="w-full h-full object-cover"
-              src="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
+            <Video className={"w-full h-full object-cover"} />
           </div>
         </div>
       </motion.div>

@@ -5,7 +5,7 @@ import Card from "./AnimatedCard";
 const EngineeringProcess = () => {
   return (
     <div className="w-full flex-col h-full flex justify-center items-center mt-20">
-      <h3 className="text-center text-xs  lg:text-base uppercase  text-gray-700">
+      <h3 className="text-center text-xs font-semibold  lg:text-base uppercase  text-gray-700">
         how we work
       </h3>
       <div className=" text-xl md:text-2xl  lg:text-6xl  text-gray-700 py-8">

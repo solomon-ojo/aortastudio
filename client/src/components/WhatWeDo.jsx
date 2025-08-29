@@ -9,7 +9,7 @@ const WhatWeDo = () => {
       <Container>
         <div className="w-full h-full">
           <div className=" w-full h-full pt-5 pb-10">
-            <h1 className="text-lg text-gray-700 font-semibold pb-5 uppercase">
+            <h1 className="text-sm md:text-lg text-gray-700 font-semibold pb-5 uppercase">
               What we do
             </h1>
             <h2 className={headingStyle}>

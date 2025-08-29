@@ -1,4 +1,6 @@
 import React from "react";
+const vidoeSrc =
+  "https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756458195/hero_kygerx.mp4";
 
 const HistoryMarquee = () => {
   return (
@@ -15,22 +17,10 @@ const HistoryMarquee = () => {
 
 const MarqueeContent = () => (
   <>
-    <MarqueeItem
-      text="200+ Projects"
-      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-    />
-    <MarqueeItem
-      text="150+ Employers"
-      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-    />
-    <MarqueeItem
-      text="15+ Years"
-      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-    />
-    <MarqueeItem
-      text="90+ Clients"
-      videoSrc="https://res.cloudinary.com/dc6iqn3mn/video/upload/v1756398683/itekako_dzt2yr.mp4"
-    />
+    <MarqueeItem text="200+ Projects" videoSrc={vidoeSrc} />
+    <MarqueeItem text="150+ Employers" videoSrc={vidoeSrc} />
+    <MarqueeItem text="15+ Years" videoSrc={vidoeSrc} />
+    <MarqueeItem text="90+ Clients" videoSrc={vidoeSrc} />
   </>
 );
 
