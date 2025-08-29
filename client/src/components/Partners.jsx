@@ -18,7 +18,7 @@ const Partners = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 ">
           {partnerLogos.map((item, index) => (
             <div key={index} className=" uppercase ">
-              <span className="text-white text-xl md:text-3xl font-bold p-4">
+              <span className="text-white text-lg md:text-3xl font-bold p-2 md:p-4 ">
                 {item}
               </span>
             </div>

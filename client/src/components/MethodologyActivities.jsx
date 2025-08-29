@@ -43,7 +43,7 @@ const MethodologyActivities = () => {
                     <span className="">{item.id}</span>
                   </span>
                   <span
-                    className={`text-lg lg:text-2xl font-semibold ${
+                    className={`text-sm lg:text-2xl font-semibold ${
                       activity.id === item.id ? "text-green-600" : "text-white"
                     }`}
                   >
@@ -86,7 +86,7 @@ const MethodologyActivities = () => {
                   {item.subtitle.map((sub, index) => (
                     <div
                       key={index}
-                      className="flex items-center justify-between text-white text-lg border-b border-b-black"
+                      className="flex items-center justify-between text-white text-sm lg:text-lg border-b border-b-black"
                     >
                       <span>{sub.title}</span>
                     </div>

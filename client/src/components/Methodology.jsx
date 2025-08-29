@@ -14,8 +14,8 @@ const Methodology = ({ className }) => {
           </div>
           {/* lg to smaller screen */}
           <div className="lg:hidden">
-            <h1 className="text-2xl leading-tight">
-              A look into our methodical process of software development
+            <h1 className=" text-xl lg:text-2xl leading-tight">
+              A look into our methodical process 
             </h1>
           </div>
           <div className="w-full">

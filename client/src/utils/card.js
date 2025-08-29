@@ -3,22 +3,25 @@
 export const cards = [
   {
     id: 1,
-    title: "Internal software tools to support internal development",
+    title:
+      "Internal software tools for support of internal development process",
     image: "/img1.jpg",
   },
   {
     id: 2,
-    title: "Internal software tools to support internal development",
+    title:
+      "Ensuring security and reliability across cryptocurrency applications",
     image: "/img2.jpg",
   },
   {
     id: 3,
-    title: "Internal software tools to support internal development",
+    title:
+      "Who needs excitement that sports brings when you can turn into numbers",
     image: "/img3.jpg",
   },
   {
     id: 4,
-    title: "Internal software tools to support internal development",
+    title: "Heavy duty software for heany duty industrial operations",
     image: "/img4.jpg",
   },
   {

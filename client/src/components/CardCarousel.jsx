@@ -4,7 +4,7 @@ import Container from "./Container";
 import { VscArrowRight } from "react-icons/vsc";
 import { cards } from "../utils/card";
 
-const CardCarousel = ({className}) => {
+const CardCarousel = ({ className }) => {
   const containerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -149,7 +149,7 @@ const CardCarousel = ({className}) => {
                   draggable={false}
                   className="w-full h-2/3 object-cover p-4"
                 />
-                <div className="p-2 text-center text-gray-400 text-xl font-semibold">
+                <div className="p-2 text-center text-gray-400 text-sm lg:text-xl font-semibold">
                   {card.title}
                 </div>
                 <div className="w-full pl-5 mb-4">
@@ -171,7 +171,7 @@ const CardCarousel = ({className}) => {
                   behavior: "smooth",
                 })
               }
-              className="bg-gray-800 hover:bg-gray-700 text-white p-2 rounded-full shadow-md"
+              className="text-white p-2 rounded-full shadow-md"
             >
               <RiArrowLeftSLine size={24} />
             </button>
@@ -179,7 +179,7 @@ const CardCarousel = ({className}) => {
               onClick={() =>
                 containerRef.current.scrollBy({ left: 300, behavior: "smooth" })
               }
-              className="bg-gray-800 hover:bg-gray-700 text-white p-2 rounded-full shadow-md"
+              className=" text-white p-2 rounded-full shadow-md"
             >
               <RiArrowRightSLine size={24} />
             </button>

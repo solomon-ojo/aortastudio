@@ -4,7 +4,7 @@ import CardMarquee from "./CardMarquee";
 
 const OurStory = () => {
   return (
-    <section className="relative z-40 h-[400px]  lg:h-screen w-full bg-white text-black mt-[100vh]  ">
+    <section className="relative z-40 h-[460px]  lg:h-screen w-full bg-white text-black mt-[100vh]  ">
       <Container>
         <div className="w-full h-full flex flex-col justify-between">
           {/* upper div */}
@@ -29,7 +29,7 @@ const OurStory = () => {
             </div>
             {/* lower div */}
           </div>
-          <div className=" w-full flex-1 py-2 ">
+          <div className=" w-full flex-1 py-2  flex items-center ">
             <CardMarquee />
           </div>
         </div>

@@ -42,11 +42,11 @@ const Navbar = () => {
               <ul className="flex items-center justify-center gap-6 h-full">
                 {/* Services trigger */}
                 <li
-                  onMouseLeave={handleMouseLeave}
-                  onMouseEnter={handleMouseEnter}
+                  // onMouseLeave={handleMouseLeave}
+                  // onMouseEnter={handleMouseEnter}
                   className={`${desktopLinkStyle} flex items-center gap-2 cursor-pointer group`}
                 >
-                  <span>Services</span>
+                  <Link to={"/custom-software-development"}>Services</Link>
                   <FaChevronDown
                     color="gray"
                     className="transition-transform duration-300 group-hover:rotate-180"
@@ -88,11 +88,12 @@ const Navbar = () => {
         <div className=" w-full  h-full flex mt-2">
           <div className="w-full">
             <div className="w-full">
-              <h2 className="pl-14 border-b border-gray-800 text-xl sm:text-3xl font-semibold pb-2">
+              {/* <h2 className="pl-14 border-b border-gray-800 text-xl sm:text-3xl font-semibold pb-2">
                 Services
-              </h2>
+              </h2> */}
 
-              <ul className=" py-2 bg-stone-800/60">
+              {/* commneted this out for future use */}
+              {/* <ul className=" py-2 bg-stone-800/60">
                 {services.map((service) => (
                   <li
                     key={service.path}
@@ -107,13 +108,13 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
             <ul className="">
               {servicesLinks.map((service) => (
                 <li
                   key={service.path}
-                  className="pl-14 border-b border-gray-800 text-lg sm:text-2xl font-semibold py-[2px] sm:py-4 my-3"
+                  className="pl-14 border-b border-gray-800 text-lg sm:text-2xl font-semibold  py-4 my-1"
                 >
                   <Link onClick={() => scrollTo(0, 0)} to={service.path}>
                     {service.name}

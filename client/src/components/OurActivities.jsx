@@ -130,7 +130,7 @@ const OurActivities = () => {
                   activeId === item.id ? "max-h-[600px] py-4 px-6" : "max-h-0"
                 }`}
               >
-                <h2 className="text-black text-2xl font-semibold mb-4">
+                <h2 className="text-black text-sm lg:text-2xl font-semibold mb-4">
                   {item.title}
                 </h2>
                 <AnimatedButton
@@ -146,7 +146,7 @@ const OurActivities = () => {
                       key={index}
                       className="flex items-center justify-between text-black text-lg border-b border-b-black"
                     >
-                      <span>{sub.title}</span>
+                      <span className="text-sm lg:text-base">{sub.title}</span>
                       <span>
                         <img src={sub.icon} alt="icon" className="" />
                       </span>

@@ -1,4 +1,5 @@
 export const servicesLinks = [
+  { name: "Services", path: "/custom-software-development" },
   { name: "AI-HUB", path: "/ai-hub" },
   { name: "Projects", path: "/projects" },
   { name: "About", path: "/about" },

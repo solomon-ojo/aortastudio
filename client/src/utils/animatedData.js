@@ -3,19 +3,19 @@ export const cardData = [
     id: 1,
     title: "Team augmentation",
     description:
-      "Explore the mysteries of the cosmos through shimmering constellations and fading stardust.",
+      "You get the best technical talents with zero hiring hassle. We can extend your technical teams quickly with our smartest tech talents who will operate as a part of your in-house team and adapt to your business culture and routines to ensure successful project delivery.",
   },
   {
     id: 2,
     title: "Dedicated team",
     description:
-      "Capture the warmth of sunset moments wrapped in golden light and quiet reflections.",
+      "Our dedicated team of skilled technology experts will help you build digital products end-to-end on time, on scope, and in line with the highest standards of quality.",
   },
   {
     id: 3,
     title: "Project based",
     description:
-      "Feel the rhythm of the night as stars flicker and silence dances in the shadows.",
+      "You own the product vision and we take full responsibility for every stage of product development - from ideation, design, to development and delivery. Also, we’re responsible to optimize time, scope of work and cost along with team’s performance.",
   },
 ];
 
