@@ -26,7 +26,7 @@ const CustomServiceHero = () => {
           <div className="w-full h-[350px]  flex items-center mt-6 pt-5">
             <div className="w-full flex-1 h-full hidden lg:block"></div>
             <div className="w-full  flex-1 h-full   ">
-              <img src="/img3.jpg" alt="" className="h-full w-full  object-cover" />
+              <img src="/activity_icon.svg" alt="" className="h-full w-full  object-cover" />
             </div>
           </div>
         </div>

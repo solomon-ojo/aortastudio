@@ -63,7 +63,9 @@ const SoftwareDevelopmentAccordion = () => {
           <div
             key={index}
             className={`${
-              openIndex === index ? "hover:bg-emerald-50" : "hover:bg-emerald-100"
+              openIndex === index
+                ? "hover:bg-emerald-50"
+                : "hover:bg-emerald-100"
             } hover:bg-emerald-100 border-t-2 border-t-gray-200 py-6  overflow-hidden`}
           >
             <button
@@ -77,7 +79,7 @@ const SoftwareDevelopmentAccordion = () => {
               >
                 {item.icon}
               </span>
-              <span className="flex-1 w-full text-start pl-5 lg:pl-0 lg:text-center text-lg lg:text-3xl  text-gray-800">
+              <span className="flex-1 w-full text-start pl-5 lg:pl-0 lg:text-center text-sm md:text-lg lg:text-3xl  text-gray-800">
                 {item.title}
               </span>
               <span className=" text-gray-600 ">
@@ -89,7 +91,7 @@ const SoftwareDevelopmentAccordion = () => {
               </span>
             </button>
             {isOpen && (
-              <div className="flex justify-center items-center px-4 py-3  text-gray-700 transition-all duration-700 ease-in-out">
+              <div className="flex justify-center items-center px-4 py-3 text-sm md:text-base  text-gray-700 transition-all duration-700 ease-in-out">
                 {item.content}
               </div>
             )}
