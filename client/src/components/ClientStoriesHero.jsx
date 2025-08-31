@@ -4,7 +4,7 @@ import Container from "./Container";
 const h1Style = "lg:text-6xl  xl:text-7xl py-1 ";
 const ClientStoriesHero = () => {
   return (
-    <section className=" h-[460px] lg:h-[650px] w-full bg-sky-100 text-gray-800">
+    <section className=" h-[460px] lg:h-[650px] w-full bg-emerald-50 text-gray-800">
       <Container>
         <div className="w-full h-full flex flex-col md:flex-row items-center gap-4 pt-20 ">
           {/* left*/}

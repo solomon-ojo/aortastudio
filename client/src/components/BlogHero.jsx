@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const BlogHero = () => {
   return (
-    <section className=" h-[460px]  w-full border-b bg-sky-100 border-b-gray-800  text-gray-800 pt-20">
+    <section className=" h-[460px]  w-full border-b bg-emerald-50 border-b-gray-800  text-gray-800 pt-20">
       <Container>
         <div className="w-full h-full pt-20">
           <div className="mt-10">

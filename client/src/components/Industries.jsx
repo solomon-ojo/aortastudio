@@ -12,13 +12,13 @@ import EngineeringProcess from "./EngineeringProcess";
 
 const Industries = () => {
   return (
-    <section className="w-full min-h-screen flex pt-20 bg-sky-100 relative z-40 ">
+    <section className="w-full min-h-screen flex pt-20 bg-emerald-50 relative z-40 ">
       <div className="w-full h-full">
         <div className="w-full flex-col h-full flex justify-center items-center">
           <h3 className="text-center text-xs lg:text-base uppercase font-bold text-gray-800">
             Industries
           </h3>
-          <div className="hidden lg:block  font-semibold text-gray-700 pt-5">
+          <div className="hidden lg:block  text-6xl  text-gray-700 pt-5">
             <h1 className="text-center ">The wide spectrum of</h1>
             <h1 className="text-center">industries we serve</h1>
           </div>

@@ -7,7 +7,7 @@ const BlogCard = () => {
   const [hoveredCardId, setHoveredCardId] = useState(null);
 
   return (
-    <section className="w-full   pt-12 bg-sky-100">
+    <section className="w-full   pt-12 bg-emerald-50">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   cursor-pointer">
         {blogCards.map((card) => (
           <Link
@@ -16,7 +16,7 @@ const BlogCard = () => {
             key={card.id}
             onMouseEnter={() => setHoveredCardId(card.id)}
             onMouseLeave={() => setHoveredCardId(null)}
-            className="flex flex-col items-center justify-between h-[450px] hover:bg-gray-500 shadow-md border border-gray-800"
+            className="flex flex-col items-center justify-between h-[450px] hover:bg-gray-200 shadow-md border border-gray-800"
           >
             <img
               src={card.image}

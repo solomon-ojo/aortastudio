@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0025E8",
-        secondary: "#6b7280",
+        primary: "#6ee7b7",
       },
       fontFamily: {
         serif: ['"Playfair Display"', "serif"], // or override 'sans' if you prefer

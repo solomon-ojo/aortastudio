@@ -5,7 +5,7 @@ const headingStyle = "text-lg md:text-3xl lg:text-6xl text-gray-700 lg:py-1";
 
 const WhatWeDo = () => {
   return (
-    <section className="w-full min-h-screen flex pt-20 bg-sky-100 relative z-40  ">
+    <section className="w-full min-h-screen flex pt-20 bg-emerald-50 relative z-40  ">
       <Container>
         <div className="w-full h-full">
           <div className=" w-full h-full pt-5 pb-10">

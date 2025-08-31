@@ -27,21 +27,21 @@ const Contact = () => {
               <div className="w-full min-h-[400px] grid grid-cols-2 gap-4">
                 <div className="bg-green-700">
                   <img
-                    src="/img1.jpg"
+                    src="/contact_img.jpg"
                     alt=""
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
                   <img
-                    src="/img3.jpg"
+                    src="/contact_img2.jpg"
                     alt=""
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
                   <img
-                    src="/img1.jpg"
+                    src="/contact_icon.svg"
                     alt=""
                     className="w-full h-full object-cover"
                   />

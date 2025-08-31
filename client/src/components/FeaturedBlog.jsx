@@ -7,7 +7,7 @@ const FeaturedBlog = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <section className=" h-[500px] sm:h-[800px] lg:h-[500px] hover:cursor-pointer  w-full bg-sky-100  text-gray-800 ">
+    <section className=" h-[500px] sm:h-[800px] lg:h-[500px] hover:cursor-pointer  w-full bg-emerald-50  text-gray-800 ">
       <Container>
         <div
           onMouseEnter={() => setHovered(true)}
@@ -42,7 +42,7 @@ const FeaturedBlog = () => {
           {/* right */}
           <div className=" flex-1 h-full">
             <img
-              src="/img1.jpg"
+              src="/blog_hero.jpg"
               alt="image"
               className="w-full h-full object-cover"
             />

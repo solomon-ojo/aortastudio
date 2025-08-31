@@ -126,7 +126,7 @@ const OurActivities = () => {
 
               {/* Accordion content for sm and below */}
               <div
-                className={`sm:block md:hidden bg-sky-200 transition-all duration-300 overflow-hidden ${
+                className={`sm:block md:hidden bg-emerald-100 transition-all duration-300 overflow-hidden ${
                   activeId === item.id ? "max-h-[600px] py-4 px-6" : "max-h-0"
                 }`}
               >
@@ -154,9 +154,10 @@ const OurActivities = () => {
                   ))}
                 </div>
                 <div className="mt-6">
-                  <Video
+                  <img src="/activity_icon.svg" alt="icon" className="w-[100px] h-[100px]" />
+                  {/* <Video
                     className={"w-[100px] h-[100px] object-cover rounded-md"}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -192,11 +193,14 @@ const OurActivities = () => {
               </div>
               <div className="flex-1 flex-shrink-0 relative">
                 <div className="flex justify-end">
-                  <Video
+                  {/* <Video
                     className={
                       "absolute top-0 right-10 w-[100px] h-[100px] object-cover"
                     }
-                  />
+                  /> */}
+
+                  <img src="/activity_icon.svg" alt="icon" className="w-[100px] h-[100px]" />
+
                 </div>
               </div>
             </div>

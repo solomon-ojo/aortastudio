@@ -57,7 +57,7 @@ const FeaturedStory = () => {
           {/* right */}
           <div className="flex-1  ">
             <img
-              src="/img3.jpg"
+              src="project_hero.jpg"
               alt="image"
               className="w-full h-full object-cover"
             />

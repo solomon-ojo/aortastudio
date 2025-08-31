@@ -7,7 +7,7 @@ const OtherBlogs = () => {
   const [hoveredCardId, setHoveredCardId] = useState(null);
 
   return (
-    <section className="w-full text-gray-900 bg-sky-100">
+    <section className="w-full text-gray-900 bg-emerald-50">
       <h1 className="py-2 text-center text-xl sm:text-2xl md:text-4xl lg:text-5xl bg-white">
         You may also read:
       </h1>
@@ -19,7 +19,7 @@ const OtherBlogs = () => {
             key={card.id}
             onMouseEnter={() => setHoveredCardId(card.id)}
             onMouseLeave={() => setHoveredCardId(null)}
-            className="flex flex-col items-center justify-between h-[450px] hover:bg-gray-100 shadow-md border border-gray-800"
+            className="flex flex-col items-center justify-between h-[450px] hover:bg-gray-200 shadow-md border border-gray-800"
           >
             <img
               src={card.image}
