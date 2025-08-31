@@ -63,8 +63,8 @@ const SoftwareDevelopmentAccordion = () => {
           <div
             key={index}
             className={`${
-              openIndex === index ? "hover:bg-sky-200" : ""
-            } hover:bg-sky-200 border-t-2 border-t-gray-200 py-6  overflow-hidden`}
+              openIndex === index ? "hover:bg-emerald-50" : "hover:bg-emerald-100"
+            } hover:bg-emerald-100 border-t-2 border-t-gray-200 py-6  overflow-hidden`}
           >
             <button
               onClick={() => toggleAccordion(index)}
