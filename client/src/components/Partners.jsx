@@ -2,14 +2,14 @@ import React from "react";
 import Container from "./Container";
 
 const partnerLogos = [
-  "coinbase",
-  "unity",
-  "burda",
-  "atlas curpo",
-  "forsts",
-  "big health",
-  "leybold",
-  "ltse",
+  "SQAN App",
+  "Ezzra",
+  "MindMap",
+  "Work Fit",
+  "IconPass",
+  "Papperboy",
+  "BuildArch",
+  "Wasabi",
 ];
 const Partners = () => {
   return (

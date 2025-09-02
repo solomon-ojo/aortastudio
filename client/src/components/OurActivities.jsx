@@ -15,8 +15,10 @@ const activityArr = [
     sideIcon: "/we_1.svg",
     subtitle: [
       { title: "Front-end and back-end development", icon: "/icon_1.svg" },
-      { title: "UI/UX Design", icon: "/icon_3.svg" },
-      { title: "API Integration", icon: "/icon_6.svg" },
+      { title: "AI and Machine learning", icon: "/icon_3.svg" },
+      { title: "Real-time communication", icon: "/icon_6.svg" },
+      { title: "Video-streaming solutions", icon: "/icon_8.svg" },
+      { title: "Product management", icon: "/icon_2.svg" },
     ],
   },
   {
@@ -28,6 +30,7 @@ const activityArr = [
       { title: "Assessment", icon: "/icon_5.svg" },
       { title: "Automation", icon: "/icon_1.svg" },
       { title: "Migrations", icon: "/icon_2.svg" },
+      { title: "Product management", icon: "/icon_2.svg" },
     ],
   },
   {

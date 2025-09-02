@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex-1 flex items-center">
             <Link onClick={() => scrollTo(0, 0)} to={"/"}>
               <span className="text-white font-bold text-xl capitalize">
-                itekako
+                Aorta Studios
               </span>
             </Link>
           </div>

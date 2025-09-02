@@ -52,65 +52,65 @@ export const methodologyActivityArr = [
   {
     id: 1,
     title: "Phase 1",
-    name: "Discovery",
+    name: "Idea and validation",
 
     subtitle: [
-      { title: "Discovery", icon: "icon1" },
+      { title: "Idea and validation", icon: "icon1" },
       {
         title:
-          "Every project starts with a roundtable with key stakeholders to understand your company’s vision and business goals. We analyze value propositions to form the right team of experts that will bring your solutions to life.",
+          "EWe work with founders to refine raw ideas into clear, actionable concepts. Through market research, user interviews, and rapid testing, we validate the problem, the solution, and the potential demand — ensuring we only build what customers truly need..",
       },
     ],
   },
   {
     id: 2,
     title: "Phase 2",
-    name: "Advisory",
+    name: "Prototype design",
 
     subtitle: [
-      { title: "Advisory", icon: "icon1" },
+      { title: "Prototype design", icon: "icon1" },
       {
         title:
-          "Whether you are planning to automate business processes or improve performance, we help you define the right business strategy to build human-centric solutions that will exceed your customers’ expectations.",
+          "We translate validated ideas into clickable prototypes that bring the vision to life. This stage helps founders visualize their product, test usability, and gather feedback before development begins.",
       },
     ],
   },
   {
     id: 3,
     title: "Phase 3",
-    name: "Design",
+    name: "MVP Development",
 
     subtitle: [
-      { title: "Design", icon: "icon1" },
+      { title: "MVP Development", icon: "icon1" },
       {
         title:
-          "Leveraging the synergy of our creativity and deep engineering capabilities, our multidisciplinary teams work closely with you to design the right game-changing products that meet evolving customer demand.",
+          "Our team builds a lean, functional version of the product focused on solving one key problem. The MVP is designed to quickly reach users, collect feedback, and prove traction with minimal cost.",
       },
     ],
   },
   {
     id: 4,
     title: "Phase 4",
-    name: "Dev and QA",
+    name: "Launch and iteration",
 
     subtitle: [
-      { title: "Dev and QA", icon: "icon1" },
+      { title: "Launch and iteration", icon: "icon1" },
       {
         title:
-          "Implementing all the necessary insights and requirements our developer teams have gathered in the previous phases, we deliver disruptive, intuitive and captivating solutions that drive your digital transformation.",
+          "We launch the product to the first target customers and gather real-world insights. Using agile sprints, we refine features, improve performance, and align the product closely with user needs.”",
       },
     ],
   },
   {
     id: 5,
     title: "Phase 5",
-    name: "Support",
+    name: "Continuous Development",
 
     subtitle: [
-      { title: "Support", icon: "icon1" },
+      { title: "Continuous Development", icon: "icon1" },
       {
         title:
-          "We support your enterprise with scalable solutions every step of the way by providing maintenance plans and enhancing your customers’ ability to stay agile and scale at all times.",
+          "As the startup grows, we provide ongoing technical support and feature development. This ensures the product scales smoothly while the founder remains focused on growth and customer acquisition.",
       },
     ],
   },

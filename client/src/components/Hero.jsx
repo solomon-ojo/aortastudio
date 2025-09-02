@@ -20,13 +20,13 @@ const Hero = () => {
       {/* Overlay text */}
       <div className="relative capitalize z-10 flex flex-col items-center justify-center h-full font-semibold  text-white text-center px-4">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4 text-white md:text-yellow-500">
-          House of engineers.
+          Build your startup.
         </h1>
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4">
-          Big enough to deliver,
+          You bring the vision,
         </h1>
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl mb-4">
-          small enough to care.
+          we bring the team.
         </h1>
       </div>
     </section>

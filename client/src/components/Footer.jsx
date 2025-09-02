@@ -13,13 +13,13 @@ const Footer = () => {
           <div className=" flex-1 w-full h-full flex flex-col  sm:flex-row lg:flex-col justify-between gap-4  py-10">
             <div className="flex-1">
               <Link onClick={() => scrollTo(0, 0)} to={"/"}>
-                <span className="text-4xl font-semibold">Itekako</span>
+                <span className="text-4xl font-semibold">Aorta Studios</span>
               </Link>{" "}
             </div>
             <div className="flex-1">
               <span className=" text-sm lg:text-[15px] ">
-                &apos;2025 Itekako, All Rights Reserved. Belgrade, Serbia,
-                Masarikova 5; +381114078146
+                &apos;2025 Aorta Studios, All Rights Reserved. Berlin, Germany,
+                Antwerpener Str 5; +491622403451
               </span>
             </div>
           </div>
