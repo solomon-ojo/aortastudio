@@ -6,8 +6,8 @@ import UnityLink from "../../components/UnityLink";
 
 const Unity = () => {
   return (
-    <main className="w-full min-h-screen pt-24 lg:pt-32 bg-[#C4D6D466] overflow-hidden ">
-      <Container>
+    <main className="w-full min-h-screen pt-28 px-5  bg-[#C4D6D466] overflow-hidden ">
+      
         <div className="w-full h-full lg:rounded-tr-xl lg:rounded-tl-xl bg-white text-black  overflow-hidden">
           <div className="fixed right-10 lg:right-16 top-30 lg:top-40 z-20">
             <Link to={"/projects"} onClick={() => scrollTo(0, 0)}>
@@ -114,7 +114,7 @@ const Unity = () => {
             </div>
           </div>
         </div>
-      </Container>
+      
     </main>
   );
 };
