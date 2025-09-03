@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       {/* Overlay text */}
       <div className="relative capitalize z-10 flex flex-col items-center justify-center h-full font-semibold  text-white text-center px-4">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4 text-white text-yellow-500">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4  text-yellow-500">
           We bring ideas to live.
         </h1>
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4">

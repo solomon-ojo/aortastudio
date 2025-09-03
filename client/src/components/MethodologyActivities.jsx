@@ -74,13 +74,14 @@ const MethodologyActivities = () => {
                   activeId === item.id ? "max-h-[600px] py-4 px-6" : "max-h-0"
                 }`}
               >
-                <h2
+                {/* <h2
                   className={`text-sm font-semibold mb-4 ${
                     activity.id === item.id ? "text-green-700" : "text-white"
                   }`}
                 >
                   {item.title}
-                </h2>
+                  
+                </h2> */}
 
                 <div className="flex flex-col gap-4">
                   {item.subtitle.map((sub, index) => (
@@ -88,7 +89,7 @@ const MethodologyActivities = () => {
                       key={index}
                       className="flex items-center justify-between text-white text-sm lg:text-lg border-b border-b-black"
                     >
-                      <span>{sub.title}</span>
+                      <span>{sub.title2}</span>
                     </div>
                   ))}
                 </div>
@@ -115,11 +116,14 @@ const MethodologyActivities = () => {
                     key={index}
                     className="flex items-center justify-between text-white text-lg border-b border-b-black"
                   >
-                    <span
-                      className={`${index === 0 ? "text-6xl pb-3 " : "text-lg"}`}
+                    <p
+                      className={`${
+                        index === 0 ? "text-6xl pb-3 " : "text-lg"
+                      }`}
                     >
                       {sub.title}
-                    </span>
+                    </p>
+                    <p className="">{sub.title2}</p>
                   </div>
                 ))}
               </div>

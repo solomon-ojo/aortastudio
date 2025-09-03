@@ -9,12 +9,14 @@ import Industries from "../../components/Industries";
 import Methodology from "../../components/Methodology";
 import OurTeam from "../../components/OurTeam";
 import ContactSection from "../../components/ContactSection";
+import MobilePartner from "../../components/MobilePartner";
 
 const Home = () => {
   return (
     <main className="relative min-h-screen w-full ">
       <Hero />
       <Partners />
+      <MobilePartner />
       <OurServices
         className={
           "w-full h-[400px] flex items-center  bg-black relative z-40  text-white "

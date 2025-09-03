@@ -152,7 +152,7 @@ const CardCarousel = ({ className }) => {
                 <div className="p-2 text-center text-gray-400 text-sm lg:text-xl font-semibold">
                   {card.title}
                 </div>
-                <div className="w-full pl-5 mb-4">
+                <div className="w-full hidden lg:block pl-5 mb-4">
                   <VscArrowRight
                     size={30}
                     className="group-hover:rotate-[-45deg] text-gray-600 group-hover:text-green-700 group-hover:transition-all duration-700 ease-in-out"
