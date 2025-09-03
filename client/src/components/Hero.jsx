@@ -11,16 +11,12 @@ const Hero = () => {
         }
       />
       <div className="absolute block md:hidden top-0 left-0 w-full h-full object-cover">
-        <img
-          src="/hero.webp"
-          alt="hero_image"
-          className=" w-full h-full object-cover "
-        />
+        <Video className={"w-full h-full object-cover"} />
       </div>
       {/* Overlay text */}
       <div className="relative capitalize z-10 flex flex-col items-center justify-center h-full font-semibold  text-white text-center px-4">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4 text-white md:text-yellow-500">
-          Build your startup.
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4 text-white text-yellow-500">
+          We bring ideas to live.
         </h1>
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl md:mb-4">
           You bring the vision,
