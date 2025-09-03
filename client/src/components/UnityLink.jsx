@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const UnityLink = ({ text,className }) => {
+const UnityLink = ({ text, className }) => {
   return (
     <div className="h-10  flex items-center">
-      <Link
-        className={className}
-        to={"#"}
-      >
+      <div className={`${className} cursor-pointer `}>
         {text}
-      </Link>
+      </div>
     </div>
   );
 };
