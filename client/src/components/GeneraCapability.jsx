@@ -24,7 +24,7 @@ const GeneraCapability = () => {
             </div>
             <div className="w-full py-6">
               <p className="text-base md:text-xl lg:text-2xl w-[60%] ">
-                At Itekako, we believe that great software starts with
+                At Aorta Studios, we believe that great software starts with
                 understanding your unique business needs.
               </p>
             </div>

@@ -18,7 +18,7 @@ const OurStory = () => {
             {/* right */}
             <div className=" w-full h-full flex items-center">
               <p className="">
-                Itekako is an IT software development company founded more than
+               Aorta Studio is an IT software development company founded more than
                 15 years ago with the idea to create a friendly and enthusiastic
                 work environment where work-life balance and innovative projects
                 make people happy to come on Mondays. That enthusiasm, a sense

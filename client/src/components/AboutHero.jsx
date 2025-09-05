@@ -13,7 +13,7 @@ const AboutHero = () => {
         {/* lower div */}
         <div className=" w-full h-1/3 bg-gray-400/60 backdrop-blur-md flex flex-col justify-center ">
           <h1 className=" text-xl md:text-4xl lg:text-6xl">
-            Itekako: Real People,
+            Aorta Studios: Real People,
           </h1>
           <h1 className="text-xl md:text-4xl lg:text-6xl pt-1">
             Real Stories, Real Success
