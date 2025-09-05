@@ -10,7 +10,7 @@ const OurValues = () => {
         <div className="w-full">
           <div className="w-full h-[700px] flex flex-col lg:flex-row  ">
             <div className="w-full  flex-1 flex flex-col justify-end lg:flex-row lg:justify-start">
-              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl py-5">
+              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl py-5 pr-3">
                 Our values
               </h1>
             </div>

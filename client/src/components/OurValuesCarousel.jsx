@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import Container from "./Container";
-import { VscArrowRight } from "react-icons/vsc";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { cards } from "../utils/card";
 
 const OurValuesCarousel = ({ className }) => {
@@ -37,7 +36,7 @@ const OurValuesCarousel = ({ className }) => {
   };
 
   const handleMouseMove = (e) => {
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 1024) {
       setCursorTargetPos({ x: e.clientX, y: e.clientY });
     }
 
@@ -61,7 +60,7 @@ const OurValuesCarousel = ({ className }) => {
   };
 
   const handleCardEnter = () => {
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 1024) {
       setShowCursor(true);
     }
   };
@@ -71,7 +70,7 @@ const OurValuesCarousel = ({ className }) => {
   };
 
   const handleCardMove = (e) => {
-    if (window.innerWidth >= 992) {
+    if (window.innerWidth >= 1024) {
       setCursorTargetPos({ x: e.clientX, y: e.clientY });
     }
   };
@@ -97,10 +96,45 @@ const OurValuesCarousel = ({ className }) => {
     return () => cancelAnimationFrame(animationFrame);
   }, [animationFrame]);
 
+  const scrollLeftHandler = () => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const screenWidth = window.innerWidth;
+    let cardWidth = container.offsetWidth;
+
+    if (screenWidth >= 768 && screenWidth < 1024) {
+      cardWidth = container.offsetWidth / 2;
+    } else if (screenWidth < 768) {
+      cardWidth = container.offsetWidth;
+    } else {
+      return;
+    }
+
+    container.scrollBy({ left: -cardWidth, behavior: "smooth" });
+  };
+
+  const scrollRightHandler = () => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const screenWidth = window.innerWidth;
+    let cardWidth = container.offsetWidth;
+
+    if (screenWidth >= 768 && screenWidth < 1024) {
+      cardWidth = container.offsetWidth / 2;
+    } else if (screenWidth < 768) {
+      cardWidth = container.offsetWidth;
+    } else {
+      return;
+    }
+
+    container.scrollBy({ left: cardWidth, behavior: "smooth" });
+  };
+
   return (
     <section className={className}>
       <div className="w-full relative">
-        {/* Yellow circle cursor */}
         {showCursor && (
           <div
             className="hidden lg:block fixed z-50 pointer-events-none transition-transform duration-300"
@@ -125,10 +159,9 @@ const OurValuesCarousel = ({ className }) => {
           </div>
         )}
 
-        {/* Card container */}
         <div
           ref={containerRef}
-          className="w-full flex overflow-x-auto no-scrollbar select-none cursor-grab bg-green-400"
+          className="w-full flex overflow-x-auto no-scrollbar select-none cursor-grab"
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
@@ -137,7 +170,8 @@ const OurValuesCarousel = ({ className }) => {
           {cards.slice(0, 8).map((card) => (
             <div
               key={card.id}
-              className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-white shadow-md border border-gray-300 flex-shrink-0"
+              className="flex items-center flex-col justify-center group flex-shrink-0 h-[450px] bg-white shadow-md border border-gray-300
+                w-full sm:w-full md:w-1/2 lg:w-1/4"
               onMouseEnter={handleCardEnter}
               onMouseLeave={handleCardLeave}
               onMouseMove={handleCardMove}
@@ -151,14 +185,26 @@ const OurValuesCarousel = ({ className }) => {
               <div className="p-2 text-center text-gray-400 text-xl font-semibold">
                 {card.title}
               </div>
-              <div className="w-full pl-5 mb-4">
-                <VscArrowRight
-                  size={30}
-                  className="group-hover:rotate-[-45deg] text-gray-800  group-hover:transition-all duration-700 ease-in-out"
-                />
-              </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex lg:hidden justify-center gap-4">
+          <button
+            onClick={scrollLeftHandler}
+            className="bg-white border-gray-300 h-20 w-full flex items-center justify-center"
+          >
+            <FiArrowLeft size={30} className="text-gray-400 font-light" />
+          </button>
+
+          {/* <div className="h-20 w-[2px] bg-gray-300"></div> */}
+
+          <button
+            onClick={scrollRightHandler}
+            className="bg-white border-gray-300 h-20 w-full flex items-center justify-center"
+          >
+            <FiArrowRight size={30} className="text-gray-400" />
+          </button>
         </div>
       </div>
     </section>

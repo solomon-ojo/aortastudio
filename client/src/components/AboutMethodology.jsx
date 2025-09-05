@@ -5,9 +5,9 @@ const AboutMethodology = () => {
   return (
     <section className="lg:sticky lg:top-0 lg:h-screen w-full bg-white z-10 ">
       <Container>
-        <div className="w-full h-full flex flex-col lg:flex-row">
+        <div className="w-full h-full flex flex-col lg:space-x-6 lg:flex-row">
           {/* left */}
-          <div className="h-full flex-1 pt-20 ">
+          <div className="h-full flex-1 pt-20  ">
             <div className="text-sm md:text-base">
               <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-8xl py-5">
                 How we do things

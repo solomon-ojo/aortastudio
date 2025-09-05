@@ -5,9 +5,9 @@ const OurMission = () => {
   return (
     <section className="relative z-40 h-[800px] lg:h-screen  w-full bg-white ">
       <Container>
-        <div className="w-full h-full  flex flex-col lg:flex-row border-b border-b-gray-300">
+        <div className="w-full h-full  flex flex-col lg:space-x-6 lg:flex-row border-b border-b-gray-300">
           {/* left */}
-          <div className="flex-1 h-full flex items-center pt-20">
+          <div className="flex-1 h-full flex items-center pt-20 ">
             <div className="text-sm md:text-base">
               <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-8xl py-5">
                 Our Mission{" "}

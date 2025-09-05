@@ -125,7 +125,7 @@ const Card = ({ title, description, benefits }) => {
         </div>
 
         {/* Animation below */}
-        <div className="relative w-full h-1/2 overflow-hidden">
+        <div className="relative w-full h-1/2 mt-24 overflow-hidden ">
           {[...Array(40)].map((_, i) => {
             const size = Math.random() * 6 + 10;
             const left = Math.random() * 100;
