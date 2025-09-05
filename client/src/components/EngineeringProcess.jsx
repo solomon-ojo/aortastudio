@@ -18,6 +18,7 @@ const EngineeringProcess = () => {
             key={card.id}
             title={card.title}
             description={card.description}
+            benefits={card.benefits}
           />
         ))}
       </div>

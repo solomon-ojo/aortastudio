@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SiPaloaltosoftware, SiCoinmarketcap } from "react-icons/si";
 import { RxCross2 } from "react-icons/rx";
-import AnimatedButton from "./AnimatedButton";
 import { methodologyActivityArr } from "../utils/activity";
 
 const divStyle =
@@ -24,7 +22,7 @@ const MethodologyActivities = () => {
       const nextActivity = methodologyActivityArr[nextIndex];
       setActivity(nextActivity);
       setCurrentIndex(nextIndex);
-      setActiveId(nextActivity.id); // ✅ Add this line
+      setActiveId(nextActivity.id); 
     }, 7000);
 
     return () => clearInterval(interval);

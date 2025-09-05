@@ -33,23 +33,23 @@ const Industries = () => {
           <IndustryCard text={"Fintech"} icon={<SiMarketo size={30} />} />{" "}
           <IndustryCard
             text={"Healthcare "}
-            icon={<MdTempleHindu size={30} />}
+            icon={<MdTempleHindu className=" text-2xl lg:text-5xl" />}
           />{" "}
           <IndustryCard
             text={"manufacturing"}
-            icon={<SiZedindustries size={30} />}
+            icon={<SiZedindustries className=" text-2xl lg:text-5xl" />}
           />{" "}
           <IndustryCard
             text={"technology"}
-            icon={<PiCornersInDuotone size={30} />}
+            icon={<PiCornersInDuotone className=" text-2xl lg:text-5xl" />}
           />{" "}
           <IndustryCard
             text={"ecommerrce"}
-            icon={<SiInductiveautomation size={30} />}
+            icon={<SiInductiveautomation className=" text-2xl lg:text-5xl" />}
           />{" "}
           <IndustryCard
             text={"automotive"}
-            icon={<PiTrainDuotone size={30} />}
+            icon={<PiTrainDuotone className=" text-2xl lg:text-5xl" />}
           />
         </div>
         {/* small to medium card */}

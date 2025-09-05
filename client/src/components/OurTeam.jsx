@@ -32,12 +32,12 @@ const OurTeam = () => {
 
           <div className="relative w-full h-full mt-10 pt-10 flex justify-center items-center">
             {/* Left Image */}
-            <div className="hidden md:block absolute z-10 h-[200px] lg:h-[250px] w-[150px] lg:w-[250px] left-0 top-1/4 lg:top-1/3">
+            <div className="  absolute z-10 h-[100px]  md:h-[200px] lg:h-[250px] w-[150px] lg:w-[250px] left-0 top-10 md:top-1/4 lg:top-1/3">
               <Video className={"w-full h-full object-cover"} />
             </div>
 
             {/* Center Div with translucent background */}
-            <div className="center-div relative z-40 w-full md:w-[80%] lg:w-[67%] h-[500px] flex items-center justify-center border-[0.5px] border-yellow-400/30 bg-yellow-200/70 backdrop-blur-md">
+            <div className="center-div relative z-40 w-[70%] md:w-[80%] lg:w-[67%] h-[500px] flex items-center justify-center border-[0.5px] border-yellow-400/30 bg-yellow-200/70 backdrop-blur-md">
               <div className="w-full md:w-[84%] h-[75%] px-4 md:px-0 flex flex-col md:flex-row justify-between items-center gap-5">
                 <div className="flex items-center justify-center h-full flex-1">
                   <Video className={"w-full h-full object-cover"} />
@@ -65,6 +65,7 @@ const OurTeam = () => {
             <div className="absolute z-10 h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] right-0 top-[-10px] lg:top-[-40px]">
               <Video className={"w-full h-full object-cover"} />
             </div>
+            
           </div>
 
           <div className="w-full flex justify-center mt-20 pt-10">
