@@ -93,7 +93,7 @@ const Card = ({ title, description, benefits }) => {
           <p className="text-black text-base text-start font-semibold mb-4">{description}</p>
           <div className="font-bold">
             <p className="text-black text-sm font-medium text-start">{benefits.heading}</p>
-            <ul className="mt-2 text-start list-disc">
+            <ul className="mt-2 text-start pl-4 list-disc">
               {benefits.text.map((text, index) => (
                 <li key={index} className="text-black text-sm border-b border-b-gray-400 py-2">
                   {text}
@@ -114,9 +114,9 @@ const Card = ({ title, description, benefits }) => {
           <p className="text-sm text-start text-black mb-4">{description}</p>
           <div>
             <p className="text-black text-start font-semibold">{benefits.heading}</p>
-            <ul className="mt-2 text-start list-disc">
+            <ul className="mt-2 text-left pl-4 ">
               {benefits.text.map((text, index) => (
-                <li key={index} className="text-black text-sm border-b border-b-gray-500 py-2">
+                <li key={index} className="text-black list-disc text-sm border-b border-b-gray-500 py-2">
                   {text}
                 </li>
               ))}
