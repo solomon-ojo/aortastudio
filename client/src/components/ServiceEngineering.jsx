@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceAnimatedCard";
 
 const ServiceEngineering = () => {
   return (
-    <div className="w-full flex-col h-full flex justify-center items-center mt-20">
+    <div className="w-full flex-col h-full flex justify-center items-center mt-20 ">
       <div className=" text-xl md:text-2xl  lg:text-6xl text-white py-8">
         <h1 className="text-center">We build solutions and grow</h1>
         <h1 className="text-center">partnerships</h1>

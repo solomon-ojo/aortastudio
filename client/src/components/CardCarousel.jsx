@@ -138,7 +138,7 @@ const CardCarousel = ({ className }) => {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="flex items-center flex-col justify-center group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
+                className="flex items-center flex-col pt-10 group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
                 onMouseEnter={handleCardEnter}
                 onMouseLeave={handleCardLeave}
                 onMouseMove={handleCardMove}
@@ -147,12 +147,12 @@ const CardCarousel = ({ className }) => {
                   src={card.image}
                   alt={card.title}
                   draggable={false}
-                  className="w-full h-2/3 object-cover p-4"
+                  className="w-full h-3/5 object-cover px-4"
                 />
                 <div className="p-2 text-center text-gray-400 text-sm lg:text-xl font-semibold">
                   {card.title}
                 </div>
-                <div className="w-full hidden lg:block pl-5 mb-4">
+                <div className="w-full hidden lg:block pt-8 pl-5 mb-4">
                   <VscArrowRight
                     size={30}
                     className="group-hover:rotate-[-45deg] text-gray-600 group-hover:text-green-700 group-hover:transition-all duration-700 ease-in-out"

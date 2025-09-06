@@ -1,7 +1,7 @@
 import { CapabilitiesCard } from "../utils/card";
 
 const Card = ({ title, icon, items }) => (
-  <div className=" h-full w-full border md:border-gray-200  py-10 p-4 flex flex-col gap-4">
+  <div className=" h-full w-full border border-gray-200   py-10 p-4 flex flex-col gap-4">
     {/* Upper Section */}
     <div className=" w-full flex lg:flex-row flex-col    items-center lg:items-start ">
       {/* Icon */}

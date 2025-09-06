@@ -8,12 +8,14 @@ import CardCarousel from "../../components/CardCarousel";
 import HowWeEngineer from "../../components/HowWeEngineer";
 import Methodology from "../../components/Methodology";
 import ContactSection from "../../components/ContactSection";
+import SoftwareDevelopmentAccordion from "../../components/SoftwareDevelopmentAccordion";
 
 const CustomSoftwareDevelopment = () => {
   return (
-    <main className="min-h-screen  w-full  z-40 ">
+    <main className="min-h-screen relative w-full ">
       <CustomServiceHero />
       <SoftwareDevelopments />
+      <SoftwareDevelopmentAccordion />
       <GeneraCapability />
       <OurServices
         className={
