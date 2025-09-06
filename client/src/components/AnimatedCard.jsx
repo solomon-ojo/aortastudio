@@ -19,10 +19,10 @@ const Card = ({ title, description, benefits }) => {
           </p>
           <div>
             <p className="text-gray-700 font-bold text-start">
-              {benefits.heading}:
+              {benefits?.heading}:
             </p>
             <ul className="mt-2 pl-4 list-disc">
-              {benefits.text.map((text, index) => (
+              {benefits?.text.map((text, index) => (
                 <li
                   key={index}
                   className="text-gray-700 text-start  border-b border-b-gray-400 py-2 font-bold "
@@ -92,9 +92,9 @@ const Card = ({ title, description, benefits }) => {
         <div className="w-1/2 flex flex-col  pt-10 mt-10 pl-4  text-center">
           <p className="text-black text-base text-start font-semibold mb-4">{description}</p>
           <div className="font-bold">
-            <p className="text-black text-sm font-medium text-start">{benefits.heading}</p>
+            <p className="text-black text-sm font-medium text-start">{benefits?.heading}</p>
             <ul className="mt-2 text-start pl-4 list-disc">
-              {benefits.text.map((text, index) => (
+              {benefits?.text.map((text, index) => (
                 <li key={index} className="text-black text-sm border-b border-b-gray-400 py-2">
                   {text}
                 </li>
@@ -113,9 +113,9 @@ const Card = ({ title, description, benefits }) => {
           </h2>
           <p className="text-sm text-start text-black mb-4">{description}</p>
           <div>
-            <p className="text-black text-start font-semibold">{benefits.heading}</p>
+            <p className="text-black text-start font-semibold">{benefits?.heading}</p>
             <ul className="mt-2 text-left pl-4 ">
-              {benefits.text.map((text, index) => (
+              {benefits?.text.map((text, index) => (
                 <li key={index} className="text-black list-disc text-sm border-b border-b-gray-500 py-2">
                   {text}
                 </li>

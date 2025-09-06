@@ -12,37 +12,42 @@ import { FiX } from "react-icons/fi";
 const accordionData = [
   {
     title: "Frontend and Backend  Development",
-    icon: <FaCode />,
+    icon: "/c1.svg",
     content:
       "We provide comprehensive web development services, covering both frontend and backend. Our skilled teams leverages popular frontend frameworks like React.js, Vue.js, and Angular to craft the user interface of your product. On the backend, we employ server-side technologies such as Python, Ruby on Rails, and Node.js, ensuring the development of fast and scalable solutions. With full-stack development, we provide end-to-end solutions that integrate frontend and backend components, along with the necessary technologies to ensure your product's success.",
   },
   {
     title: "AI and machine learning",
-    icon: <FaMobileAlt />,
+    icon: "/c2.svg",
+
     content:
       "Unlock the power of artificial intelligence solutions to address business challenges, automate tasks, and enhance customer service. These AI-driven solutions are flexible and scalable, aligning with the needs of businesses, whether small or large, in the ever-changing digital landscape",
   },
   {
     title: "IoT and Embedded software",
-    icon: <FaCloud />,
+    icon: "/c3.svg",
+
     content:
       "Using state-of-the-art tools and standards, we launch IoT firmware for various platforms and embedded apps for IoT devices. We keep your IoT devices up-to-date, scalable and secure by offering regular updates and OTA (over-the-air) development.",
   },
   {
     title: "Real-time communication",
-    icon: <FaDatabase />,
+    icon: "/c4.svg",
+
     content:
       "We develop innovative real-time communication applications that make file-sharing, analytics, video calls and long-distance conferences easy, more efficient, secure and accessible.",
   },
   {
     title: "Video streaming solutions",
-    icon: <FaRobot />,
+    icon: "/c5.svg",
+
     content:
       "Our team of highly skilled experts help media companies build premium video streaming apps to power digital video businesses from content management to end-user experience and enable a completely new experience of having video streaming support multiple live events for a large number of users.",
   },
   {
     title: "Product management",
-    icon: <FaTools />,
+    icon: "/c6.svg",
+
     content:
       "Our dedicated product managers are the driving force behind our software development projects. They excel in communication and are adept at bringing together the diverse goals of various stakeholders, whether we're crafting a simple app or embarking on a major enterprise initiative. Your project is in good hands with our team!",
   },
@@ -63,10 +68,8 @@ const SoftwareDevelopmentAccordion = () => {
           <div
             key={index}
             className={`${
-              openIndex === index
-                ? "hover:bg-emerald-50"
-                : "hover:bg-emerald-100"
-            } hover:bg-emerald-100 border-t-2 border-t-gray-200 py-6  overflow-hidden`}
+              openIndex === index ? "hover:bg-emerald-100 bg-emerald-100" : ""
+            } hover:bg-emerald-100 border-t-2 border-t-white py-6  overflow-hidden`}
           >
             <button
               onClick={() => toggleAccordion(index)}
@@ -74,10 +77,10 @@ const SoftwareDevelopmentAccordion = () => {
             >
               <span
                 className={`${
-                  openIndex === index ? "bg-yellow-500" : ""
-                } text-xl text-black p-3`}
+                  openIndex === index ? "bg-yellow-200" : ""
+                } text-xl text-black p-3 `}
               >
-                {item.icon}
+                <img src={item.icon} alt={item.title} className="h-3 w-3 lg:h-8 lg:w-8" />
               </span>
               <span className="flex-1 w-full text-start pl-5 lg:pl-0 lg:text-center text-sm md:text-lg lg:text-3xl  text-gray-800">
                 {item.title}

@@ -3,7 +3,7 @@ import { FaLinux, FaWindows, FaApple } from "react-icons/fa";
 const cardData = [
   {
     title: "General",
-    icon: <FaLinux className="text-4xl text-green-600" />,
+    icon: "/s1.svg",
     items: [
       "Web applications",
       "Real-time communication systems",
@@ -17,7 +17,7 @@ const cardData = [
   },
   {
     title: "Programming Languages",
-    icon: <FaWindows className="text-4xl text-blue-500" />,
+    icon: "/s2.svg",
     items: [
       "JavaScript (Node, React, Angular, Vue)",
       "TypeScript",
@@ -31,7 +31,8 @@ const cardData = [
   },
   {
     title: "Databases",
-    icon: <FaApple className="text-4xl text-gray-700" />,
+    icon: "/s3.svg",
+
     items: [
       "PostgreSQL",
       "MariaDB/MySQL",
@@ -43,32 +44,38 @@ const cardData = [
   },
   {
     title: "Operating Systems",
-    icon: <FaLinux className="text-4xl text-green-600" />,
+    icon: "/s4.svg",
+
     items: ["Microsoft Windows", "GNU/Linux", "iOS", "Android"],
   },
   {
     title: "Cloud",
-    icon: <FaWindows className="text-4xl text-blue-500" />,
+    icon: "/s5.svg",
+
     items: ["AWS", "Azure", "GCP", "Heroku"],
   },
   {
     title: "DevOps",
-    icon: <FaApple className="text-4xl text-gray-700" />,
+    icon: "/s6.svg",
+
     items: ["Ansible", "Docker", "Kubernetes", "Terraform", "Jenkins"],
   },
   {
     title: "Streaming",
-    icon: <FaLinux className="text-4xl text-green-600" />,
+    icon: "/s7.svg",
+
     items: ["Wowza", "Nginx", "Janus", "FFmpeg"],
   },
   {
     title: "Messaging",
-    icon: <FaWindows className="text-4xl text-blue-500" />,
+    icon: "/s8.svg",
+
     items: ["AMQP (RabbitMQ)", "MQTT", "Next.js", "TSX"],
   },
   {
     title: "Methodologies",
-    icon: <FaApple className="text-4xl text-gray-700" />,
+    icon: "/s9.svg",
+
     items: ["Agile", "Scrum", "Continuous Integration"],
   },
 ];
@@ -79,7 +86,7 @@ const Card = ({ title, icon, items }) => (
     <div className=" w-full flex lg:flex-row flex-col    items-center lg:items-start ">
       {/* Icon */}
       <div className="lg:w-1/5 w-full flex justify-start lg:justify-center mb-2 lg:mb-0">
-        {icon}
+        <img src={icon} alt="" className="" />
       </div>
 
       {/* Title */}
