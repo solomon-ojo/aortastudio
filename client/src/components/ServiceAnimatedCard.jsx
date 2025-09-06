@@ -117,7 +117,7 @@ const ServiceCard = ({ title, description, benefits }) => {
           <h2 className="text-2xl font-semibold mb-4 text-white py-3">
             {title}
           </h2>
-          <p className="text-sm text-white mb-4">{description}</p>
+          <p className="text-sm text-start text-white mb-4">{description}</p>
           <div>
             {/* Hid this to conform with the original design */}
             <p className="text-white text-start font-semibold hidden">
