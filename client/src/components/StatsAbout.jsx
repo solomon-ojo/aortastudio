@@ -8,7 +8,7 @@ const StatsAbout = () => {
       <Container>
         <div className="h-full w-full flex flex-col lg:flex-row items-center gap-4">
           {/* left */}
-          <div className="flex-1 flex flex-col gap-2 h-2/3 lg:h-full w-full px-4 ">
+          <div className="flex-1 flex flex-col gap-2 h-2/3 lg:h-full w-full  ">
             {/* upper */}
             <div className="h-full w-full flex flex-col lg:flex-row items-start lg:items-center gap-4 border-b">
               <div className="">
@@ -41,7 +41,7 @@ const StatsAbout = () => {
             </div>
           </div>
           {/* right */}
-          <div className="flex-1 h-full w-full  flex flex-col justify-between px-4">
+          <div className="flex-1 h-full w-full  flex flex-col justify-between lg:px-4">
             <div className="w-full h-1/2 pt-6 ">
               <h1 className="text-gray-500 text-xl md:text-2xl  py-2">
                 About Project

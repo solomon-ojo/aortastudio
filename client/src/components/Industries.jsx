@@ -29,7 +29,7 @@ const Industries = () => {
           </div>
         </div>
         {/* desktop card */}
-        <div className="w-full h-full lg:flex items-center pt-10 hidden">
+        <div className="w-full h-full lg:flex items-center pt-10 hidden ">
           <IndustryCard text={"Fintech"} icon={<SiMarketo size={30} />} />{" "}
           <IndustryCard
             text={"Healthcare "}

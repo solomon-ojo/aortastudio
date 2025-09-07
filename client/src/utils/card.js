@@ -153,6 +153,7 @@ export const clientCards = [
   },
 ];
 
+// replaced with blogdata in utils/blogData.js
 export const blogCards = [
   {
     id: 1,

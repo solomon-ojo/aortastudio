@@ -14,7 +14,7 @@ const StatsPerformHero = () => {
         </div>
         {/* right */}
         <div className="flex-1 h-full w-full bg-black text-white">
-          <p className="text-lg sm:text-2xl md:text-4xl lg:text-5xl pt-10 px-5">
+          <p className="text-lg sm:text-2xl md:text-4xl lg:text-5xl pt-10 px-10 lg:px-5">
             Who needs excitement that sport brings when you can turn it into
             numbers
           </p>

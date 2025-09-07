@@ -5,12 +5,10 @@ import ServiceEngineering from "./ServiceEngineering";
 const HowWeEngineer = () => {
   return (
     <section className="w-full min-h-screen flex pt-20 bg-black relative z">
-      <Container>
-        <div className="w-full">
-          <div className=""></div>
-          <ServiceEngineering />
-        </div>
-      </Container>
+      <div className="w-full">
+        <div className=""></div>
+        <ServiceEngineering />
+      </div>
     </section>
   );
 };
