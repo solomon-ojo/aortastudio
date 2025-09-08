@@ -11,7 +11,7 @@ const BlogArticle = ({ blogParam }) => {
   useEffect(() => {
     fetchBlogDetails();
   }, [blogParam]);
-  console.log("Blog Params are", blogDetails);
+  // console.log("Blog Params are", blogDetails);
   return (
     <section className="w-full min-h-screen bg-white text-gray-700  pb-10">
       {blogDetails?.map((blog) => (
@@ -69,7 +69,9 @@ const BlogArticle = ({ blogParam }) => {
                   </div>
                   {blog?.sections?.map((section) => (
                     <div key={section.id} className="">
-                      <h2 className="py-4 text-xl text-gray-500">{section?.heading}</h2>
+                      <h2 className="py-4 text-xl text-gray-500">
+                        {section?.heading}
+                      </h2>
                       {section?.paragraph?.map((p, idx) => {
                         if (typeof p === "string") {
                           // Plain string paragraph
@@ -84,11 +86,17 @@ const BlogArticle = ({ blogParam }) => {
                         if (typeof p === "object" && p !== null) {
                           return (
                             <div key={idx}>
-                              <p>{p.text}</p>
+                              <p
+                                dangerouslySetInnerHTML={{ __html: p.text }}
+                              ></p>
                               {Array.isArray(p.listItems) && (
                                 <ul className="pl-4">
                                   {p.listItems.map((item, i) => (
-                                    <li className="list-disc py-1 " key={i}>{item}</li>
+                                    <li
+                                      className="list-disc py-1 "
+                                      key={i}
+                                      dangerouslySetInnerHTML={{ __html: item }}
+                                    ></li>
                                   ))}
                                 </ul>
                               )}
