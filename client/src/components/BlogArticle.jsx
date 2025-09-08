@@ -28,8 +28,8 @@ const BlogArticle = ({ blogParam }) => {
                 />
               </div>
               {/* right */}
-              <div className="flex-1 h-full w-full px-6 ">
-                <p className="text-lg sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl pt-10 px-5">
+              <div className="flex-1 h-full w-full px-3 lg:px-6 ">
+                <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-7xl pt-10  lg:px-5">
                   {blog.title}
                 </p>
               </div>

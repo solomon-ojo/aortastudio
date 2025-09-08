@@ -16,7 +16,7 @@ const BlogCard = () => {
             key={blog.blogParam}
             onMouseEnter={() => setHoveredCardId(blog.blogParam)}
             onMouseLeave={() => setHoveredCardId(null)}
-            className="flex flex-col items-center justify-between h-[450px] px-6 hover:bg-gray-200 shadow-md border border-gray-800"
+            className="flex flex-col items-center justify-between h-[450px] lg:px-6 hover:bg-gray-200 shadow-md border border-gray-800"
           >
             <img
               src={blog.image}

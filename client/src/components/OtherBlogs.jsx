@@ -19,7 +19,7 @@ const OtherBlogs = () => {
             key={blog.blogParam}
             onMouseEnter={() => setHoveredCardId(blog.blogParam)}
             onMouseLeave={() => setHoveredCardId(null)}
-            className="flex flex-col items-center justify-between h-[450px] px-6 hover:bg-gray-200 border-b border-r lg:border-r-0 border-r-gray-200  lg:border-b-0  lg:border lg:border-gray-800"
+            className="flex flex-col items-center justify-between h-[450px] lg:px-6 hover:bg-gray-200 border-b border-r lg:border-r-0 border-r-gray-200  lg:border-b-0  lg:border lg:border-gray-800"
           >
             <img
               src={blog.image}
