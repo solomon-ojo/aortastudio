@@ -3,7 +3,7 @@ import { BsPlusLg } from "react-icons/bs";
 
 const Card = ({ title, description, benefits }) => {
   return (
-    <div className="relative w-full h-[700px] md:h-[500px] overflow-hidden border border-white text-white px-3 lg:px-0">
+    <div className="relative w-full h-[700px] md:h-[500px] overflow-hidden border border-white text-white ">
       {/* Large screens: hover layout */}
       <div className="hidden lg:flex group relative w-full h-full hover:bg-white cursor-pointer flex-col px-4">
         {/* Fixed Title Section */}
