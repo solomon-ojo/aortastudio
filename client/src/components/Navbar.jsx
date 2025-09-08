@@ -116,7 +116,7 @@ const Navbar = () => {
               {servicesLinks.map((service) => (
                 <li
                   key={service.path}
-                  className="pl-14  text-lg sm:text-2xl font-semibold  py-4 my-1"
+                  className="px-3  text-2xl font-semibold  py-4 my-1"
                 >
                   <Link onClick={() => scrollTo(0, 0)} to={service.path}>
                     {service.name}
@@ -126,7 +126,7 @@ const Navbar = () => {
             </ul>
 
             {/* SOCIAL MEDIA LINKS */}
-            <SocialLinks className={"flex items-center gap-6 pl-14 pt-5"} />
+            <SocialLinks className={"flex items-center gap-6 px-3 pt-5"} />
           </div>
         </div>
       </nav>
