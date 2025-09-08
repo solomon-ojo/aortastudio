@@ -4,12 +4,13 @@ import Video from "./Video";
 const Hero = () => {
   return (
     <section className="fixed top-[80px] left-0 w-full h-[calc(100vh-80px)] lg:top-0 lg:h-screen z-0 overflow-hidden">
-      {/* Live video background */}
+      {/* Live video background  for Lg */}
       <Video
         className={
           "absolute hidden md:block top-0 left-0 w-full h-full object-cover"
         }
       />
+      {/* Small devices */}
       <div className="absolute block md:hidden top-0 left-0 w-full h-full object-cover">
         <Video className={"w-full h-full object-cover"} />
       </div>
