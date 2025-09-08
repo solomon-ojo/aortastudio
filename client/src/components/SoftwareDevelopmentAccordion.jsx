@@ -23,7 +23,7 @@ const SoftwareDevelopmentAccordion = () => {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="flex items-center justify-between w-full px-4 py-3 transition  "
+                className="flex items-center justify-between w-full lg:px-4 py-3 transition  "
               >
                 <span
                   className={`${
