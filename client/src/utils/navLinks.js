@@ -15,19 +15,19 @@ export const services = [
   },
   {
     name: "Devops and Migrations",
-    path: "/devops-and-migrations",
+    path: "/custom-software-development",
   },
   {
     name: "Software testing and QA",
-    path: "/software-testing-and-qa",
+    path: "/custom-software-development",
   },
   {
     name: "Consulting",
-    path: "/consulting",
+    path: "/custom-software-development",
   },
   {
     name: "Building digital products end-to-end",
-    path: "/building-digital-products-endto-end",
+    path: "/custom-software-development",
   },
 ];
 
@@ -54,7 +54,7 @@ export const quickLinks = [
     path: "/contact",
   },
   {
-    name: "Privacy and cookie policy",
-    path: "/privacy-policy",
+    name: "Client Stories",
+    path: "/projects",
   },
 ];

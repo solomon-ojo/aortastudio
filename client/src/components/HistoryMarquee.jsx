@@ -17,10 +17,10 @@ const HistoryMarquee = () => {
 
 const MarqueeContent = () => (
   <>
-    <MarqueeItem text="200+ Projects" videoSrc={vidoeSrc} />
-    <MarqueeItem text="150+ Employers" videoSrc={vidoeSrc} />
-    <MarqueeItem text="15+ Years" videoSrc={vidoeSrc} />
-    <MarqueeItem text="90+ Clients" videoSrc={vidoeSrc} />
+    <MarqueeItem text="200+ Ideas " videoSrc={vidoeSrc} />
+    <MarqueeItem text="20+ Employees" videoSrc={vidoeSrc} />
+    <MarqueeItem text="15+ Countries" videoSrc={vidoeSrc} />
+    <MarqueeItem text="30+ Startups" videoSrc={vidoeSrc} />
   </>
 );
 

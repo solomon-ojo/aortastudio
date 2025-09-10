@@ -13,14 +13,16 @@ const AboutMethodology = () => {
                 How we do things
               </h1>
               <p className="py-2">
-                At Itekako, our mission is to ignite businesses worldwide with
-                cutting-edge software solutions. We create, build, and scale all
-                things digital, serving startups, scale-ups, and big players.
-              </p>
+                We focus on one market, one problem, and one growth channel—keeping execution lean and disciplined. 
+                With agile teams and $50K budgets, we build MVPs that hit $20K–$30K MRR within 24 months, then connect 
+                them to capital for scaling.
+                
               <p className="py-2">
-                At Itekako, our mission is to ignite businesses worldwide with
-                cutting-edge software solutions. We create, build, and scale all
-                things digital, serving startups, scale-ups, and big players.
+                Our structured approach de-risks early-stage ventures and creates a reliable pipeline of
+                investment-ready startups. For investors, this means higher-quality deal flow. For founders, 
+                it means a real chance at building a fundable company
+               
+              </p>
               </p>
             </div>
           </div>

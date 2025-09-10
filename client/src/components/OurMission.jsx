@@ -13,14 +13,16 @@ const OurMission = () => {
                 Our Mission{" "}
               </h1>
               <p className="py-2">
-                At Itekako, our mission is to ignite businesses worldwide with
-                cutting-edge software solutions. We create, build, and scale all
-                things digital, serving startups, scale-ups, and big players.
+                Our mission is to transform high-potential ideas from non-technical professionals into scalable, 
+                revenue-generating startups. By combining lean execution with disciplined validation, we create a 
+                steady pipeline of fundable companies—de-risking early-stage ventures for founders and delivering 
+                higher-quality deal flow for investors.
               </p>
               <p className="py-2">
-                At Itekako, our mission is to ignite businesses worldwide with
-                cutting-edge software solutions. We create, build, and scale all
-                things digital, serving startups, scale-ups, and big players.
+                We believe brilliant ideas shouldn’t die just because the founder can’t code. 
+                Our mission is to stand beside non-technical professionals as their technical 
+                co-founder, turning concepts into real businesses with traction, revenue, and a 
+                clear path to investment
               </p>
             </div>
           </div>

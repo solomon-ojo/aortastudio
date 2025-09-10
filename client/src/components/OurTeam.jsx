@@ -44,10 +44,10 @@ const OurTeam = () => {
                 </div>
                 <div className="flex-1 h-full w-full">
                   <p className="text-sm md:text-base lg:text-lg font-semibold">
-                    Our dynamic work environment fosters creativity, empowers
-                    you to make an impact, and offers endless learning
-                    opportunities. Together, let's shape the future of
-                    technology and create extraordinary solutions that inspire.
+                    From your initial idea to a validated startup, we act as your technical co-founder, 
+                    transforming your concept into a fully functional, investment-ready company. We specialize 
+                    in building lean, scalable solutions and the infrastructure that powers them, empowering founders 
+                    from early-stage professionals to industry experts to successfully launch and grow their ventures.
                   </p>
                   <div className="lg:mt-20 pt-4 lg:pt-20">
                     <AnimatedButton
