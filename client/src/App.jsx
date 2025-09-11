@@ -3,6 +3,9 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 const Home = React.lazy(() => import("./pages/home/Home"));
+const HomeCardDetails = React.lazy(() =>
+  import("./pages/home/HomeCardDetails")
+);
 const About = React.lazy(() => import("./pages/about/About"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const Blog = React.lazy(() => import("./pages/blog/Blog"));
@@ -19,29 +22,37 @@ const CustomSoftwareDevelopment = React.lazy(() =>
   import("./pages/services/CustomSoftwareDevelopment")
 );
 
+const ServiceCardDetails = React.lazy(() =>
+  import("./pages/services/ServiceCardDetails")
+);
 const NotFound = React.lazy(() => import("./pages/notFound/NotFound"));
 
 const App = () => {
   const location = useLocation();
 
   // Don’t show footer on /projects/unity
-  const hideFooter = location.pathname === "/projects/unity";
+  const hideFooter = location.pathname === "/projects/unity" || "/:param";
 
   return (
     <div className="bg-black">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:param" element={<HomeCardDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:blogParam" element={<BlogDetails />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/unity" element={<Unity />} />
-        <Route path="/projects/:id" element={<ProjectDetails />} />
+        <Route path="/projects/:param" element={<ProjectDetails />} />
         <Route
           path="/custom-software-development"
           element={<CustomSoftwareDevelopment />}
+        />
+        <Route
+          path="/custom-software-development/:param"
+          element={<ServiceCardDetails />}
         />
         <Route path="/*" element={<NotFound />} />
       </Routes>

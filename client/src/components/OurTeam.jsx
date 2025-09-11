@@ -37,7 +37,7 @@ const OurTeam = () => {
             </div>
 
             {/* Center Div with translucent background */}
-            <div className="center-div relative z-40 w-[70%] md:w-[80%] lg:w-[67%] h-[500px] flex items-center justify-center border-[0.5px] border-yellow-400/30 bg-yellow-200/70 backdrop-blur-md">
+            <div className="center-div relative z-40 w-[70%] md:w-[80%] lg:w-[67%] h-[600px] flex items-center justify-center border-[0.5px] border-yellow-400/30 bg-yellow-200/70 backdrop-blur-md">
               <div className="w-full md:w-[84%] h-[75%] px-4 md:px-0 flex flex-col md:flex-row justify-between items-center gap-5">
                 <div className="flex items-center justify-center h-full flex-1">
                   <Video className={"w-full h-full object-cover"} />

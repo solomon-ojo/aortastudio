@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const StatsAbout = () => {
   return (
-    <section className=" h-[1000px] md:h-[600px] lg:h-[500px] w-full bg-white text-gray-800">
+    <div className=" h-[1000px] md:h-[600px] lg:h-[500px] w-full bg-white text-gray-800">
       <Container>
         <div className="h-full w-full flex flex-col lg:flex-row items-center gap-4">
           {/* left */}
@@ -67,7 +67,7 @@ const StatsAbout = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import { VscArrowRight } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { cardDetails } from "../utils/projectDetails";
 
-const CardCarousel = ({ className }) => {
+const ServiceCardCarousel = ({ className }) => {
   const containerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -139,9 +139,9 @@ const CardCarousel = ({ className }) => {
             {cardDetails.map((card) => (
               <Link
                 onClick={() => scrollTo(0, 0)}
-                to={`/${card.param}`}
+                to={`/custom-software-development/${card.param}`}
                 key={card.param}
-                onMouseDown={(e) => e.preventDefault()} 
+                onMouseDown={(e) => e.preventDefault()}
                 className="flex items-center flex-col pt-10 group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
                 onMouseEnter={handleCardEnter}
                 onMouseLeave={handleCardLeave}
@@ -194,4 +194,4 @@ const CardCarousel = ({ className }) => {
   );
 };
 
-export default CardCarousel;
+export default ServiceCardCarousel;

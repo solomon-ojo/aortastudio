@@ -9,6 +9,7 @@ import HowWeEngineer from "../../components/HowWeEngineer";
 import Methodology from "../../components/Methodology";
 import ContactSection from "../../components/ContactSection";
 import SoftwareDevelopmentAccordion from "../../components/SoftwareDevelopmentAccordion";
+import ServiceCardCarousel from "../../components/ServiceCarousel";
 
 const CustomSoftwareDevelopment = () => {
   return (
@@ -22,7 +23,7 @@ const CustomSoftwareDevelopment = () => {
           "w-full h-[400px] flex items-center  bg-black relative   text-white "
         }
       />
-      <CardCarousel
+      <ServiceCardCarousel
         className={"relative overflow-hidden w-full h-[500px] bg-black "}
       />
       <HowWeEngineer />
