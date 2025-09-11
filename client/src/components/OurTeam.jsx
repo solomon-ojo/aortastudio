@@ -37,25 +37,30 @@ const OurTeam = () => {
             </div>
 
             {/* Center Div with translucent background */}
-            <div className="center-div relative z-40 w-[70%] md:w-[80%] lg:w-[67%] h-[600px] flex items-center justify-center border-[0.5px] border-yellow-400/30 bg-yellow-200/70 backdrop-blur-md">
+            <div className="center-div relative z-40 w-[90%] md:w-[80%] lg:w-[67%] h-[600px] flex items-center justify-center border-[0.5px] border-yellow-400/30 bg-yellow-200/70 backdrop-blur-md">
               <div className="w-full md:w-[84%] h-[75%] px-4 md:px-0 flex flex-col md:flex-row justify-between items-center gap-5">
                 <div className="flex items-center justify-center h-full flex-1">
                   <Video className={"w-full h-full object-cover"} />
                 </div>
                 <div className="flex-1 h-full w-full">
                   <p className="text-sm md:text-base lg:text-lg font-semibold">
-                    From your initial idea to a validated startup, we act as your technical co-founder, 
-                    transforming your concept into a fully functional, investment-ready company. We specialize 
-                    in building lean, scalable solutions and the infrastructure that powers them, empowering founders 
-                    from early-stage professionals to industry experts to successfully launch and grow their ventures.
+                    From your initial idea to a validated startup, we act as
+                    your technical co-founder, transforming your concept into a
+                    fully functional, investment-ready company. We specialize in
+                    building lean, scalable solutions and the infrastructure
+                    that powers them, empowering founders from early-stage
+                    professionals to industry experts to successfully launch and
+                    grow their ventures.
                   </p>
                   <div className="lg:mt-20 pt-4 lg:pt-20">
-                    <AnimatedButton
-                      bg="relative bg-black overflow-hidden px-8 py-2 mb-5 rounded-full group/join hover:cursor-pointer"
-                      iconClass="text-white z-20"
-                      textClass="text-sm capitalize font-semibold text-yellow-400 relative z-10"
-                      text="more"
-                    />
+                    <a target="_blank" href="mailto:info@aortastudios.com">
+                      <AnimatedButton
+                        bg="relative bg-black overflow-hidden px-8 py-2 mb-5 rounded-full group/join hover:cursor-pointer"
+                        iconClass="text-white z-20"
+                        textClass="text-sm capitalize font-semibold text-yellow-400 relative z-10"
+                        text="more"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -65,7 +70,6 @@ const OurTeam = () => {
             <div className="absolute z-10 h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] right-0 top-[-10px] lg:top-[-40px]">
               <Video className={"w-full h-full object-cover"} />
             </div>
-            
           </div>
 
           <div className="w-full flex justify-center mt-20 pt-10">
