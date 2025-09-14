@@ -122,7 +122,7 @@ export const cardDetails = [
   {
     param: "teressa-med",
     title: "Teressa-Med",
-    img:"/teramed.webp",
+    img:"/teresamed.webp",
     heading:
       "Ensuring Security and Reliability Across Cryptocurrency Applications",
     service: ["Software testing and QA"],
