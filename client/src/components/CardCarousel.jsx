@@ -141,7 +141,7 @@ const CardCarousel = ({ className }) => {
                 onClick={() => scrollTo(0, 0)}
                 to={`/${card.param}`}
                 key={card.param}
-                onMouseDown={(e) => e.preventDefault()} 
+                onMouseDown={(e) => e.preventDefault()}
                 className="flex items-center flex-col pt-10 group w-full sm:w-full md:w-2/3 lg:w-1/4 h-[450px]  bg-black lg:hover:bg-lime-900/40 shadow-md border border-gray-800 flex-shrink-0"
                 onMouseEnter={handleCardEnter}
                 onMouseLeave={handleCardLeave}
@@ -153,8 +153,9 @@ const CardCarousel = ({ className }) => {
                   draggable={false}
                   className="w-full h-3/5 object-cover px-4"
                 />
+
                 <div className="p-2  text-gray-200 text-sm lg:text-xl font-semibold">
-                  {card.title}
+                  <p className="">{card.heading}</p>
                 </div>
                 <div className="w-full hidden lg:block pt-8 pl-5 mb-4">
                   <VscArrowRight

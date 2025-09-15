@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import UnityLink from "../../components/UnityLink";
 import { cardDetails } from "../../utils/projectDetails";
 
 const HomeCardDetails = () => {
   const { param } = useParams();
-    const [details, setDetails] = useState(null);
-    const fetchDetails = () => {
-      const targetDetail = cardDetails.filter((d) => d.param === param);
-      setDetails(targetDetail);
-    };
-    useEffect(() => {
-      fetchDetails();
-    }, [param]);
+  const [details, setDetails] = useState(null);
+  const navigate = useNavigate();
+  const fetchDetails = () => {
+    const targetDetail = cardDetails.filter((d) => d.param === param);
+    setDetails(targetDetail);
+  };
+  useEffect(() => {
+    fetchDetails();
+  }, [param]);
 
   return (
     <main className="w-full min-h-screen pt-28 px-3 lg:px-5  bg-[#C4D6D466] overflow-hidden ">
@@ -23,12 +24,11 @@ const HomeCardDetails = () => {
           className="w-full h-full lg:rounded-tr-xl lg:rounded-tl-xl bg-white text-black  overflow-hidden"
         >
           <div className="fixed right-3 lg:right-8 top-28 lg:top-32 z-20">
-            <Link to={"/"} onClick={() => scrollTo(0, 0)}>
-              <IoMdClose
-                size={35}
-                className="cursor-pointer text-gray-200 bg-gray-600 h-[40px] w-[40px]  rounded-full"
-              />
-            </Link>{" "}
+            <IoMdClose
+              onClick={() => navigate(-1)}
+              size={35}
+              className="cursor-pointer text-gray-200 bg-gray-600 h-[40px] w-[40px]  rounded-full"
+            />
           </div>
           {/* Scrollable content inside fixed height */}
           <div className="w-full h-full flex flex-col overflow-y-auto">

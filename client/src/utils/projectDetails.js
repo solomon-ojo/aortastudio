@@ -2,9 +2,8 @@ export const cardDetails = [
   {
     param: "nulgen",
     title: "Nulgen",
-    img:"/nulgen.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/nulgen.webp",
+    heading: "Nulgen is giving sudents early access tio technical skills",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -17,9 +16,8 @@ export const cardDetails = [
   {
     param: "ezzra",
     title: "Ezzra",
-    img:"/ezzra.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/ezzra.webp",
+    heading: "Ezzra is bringing AI into churches and religious organisations",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -32,9 +30,8 @@ export const cardDetails = [
   {
     param: "mindmap",
     title: "MindMap",
-    img:"/mindmap.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/mindmap.webp",
+    heading: "MindMap is redefining how mental health is tackled amongst GenZ",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -47,9 +44,8 @@ export const cardDetails = [
   {
     param: "sqan",
     title: "SQAN",
-    img:"/sqan.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/sqan.webp",
+    heading: "SQAN is reimagining cashless transfer in Nigeria",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -62,9 +58,8 @@ export const cardDetails = [
   {
     param: "iconpass",
     title: "ICONPASS",
-    img:"/iconpass.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/iconpass.webp",
+    heading: "IconPass is opening up a new era of access to celebrities",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -77,9 +72,8 @@ export const cardDetails = [
   {
     param: "hexis",
     title: "Hexis",
-    img:"/hexis.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/hexis.webp",
+    heading: "Hexis is the AI-powered school management system",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -92,9 +86,9 @@ export const cardDetails = [
   {
     param: "papperboy",
     title: "Papperboy",
-    img:"/papperboy.webp",
+    img: "/papperboy.webp",
     heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+      "Papperboy specializes in seamless payment processing solutions for eCommerce businesses",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -107,9 +101,9 @@ export const cardDetails = [
   {
     param: "workfit",
     title: "Workfit",
-    img:"/workfit.webp",
+    img: "/workfit.webp",
     heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+      "Workfit is the database for Africa's most talented tech professionals",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -122,9 +116,8 @@ export const cardDetails = [
   {
     param: "teressa-med",
     title: "Teressa-Med",
-    img:"/teresamed.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/teresamed.webp",
+    heading: "Teressa-Med is providing free health care to the most vulnerable",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -137,9 +130,8 @@ export const cardDetails = [
   {
     param: "viola",
     title: "Viola",
-    img:"/viola.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/viola.webp",
+    heading: "Viola is opening up a new world of internship for undergraduates",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],
@@ -152,9 +144,8 @@ export const cardDetails = [
   {
     param: "wasabi",
     title: "Wasabi",
-    img:"/wasabi.webp",
-    heading:
-      "Ensuring Security and Reliability Across Cryptocurrency Applications",
+    img: "/wasabi.webp",
+    heading: "Wasabi is the AI assitant that is African culture aware",
     service: ["Software testing and QA"],
     industry: ["Fintech"],
     techStack: ["WebdriverIO", "Appium,", "JIRA", "TestMo", "Linear"],

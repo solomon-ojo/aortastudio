@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import Container from "./Container";
 import StatPerformButtons from "./StatPerformButtons";
 import { cardDetails } from "../utils/projectDetails";
+import { IoMdClose } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const StatsPerformHero = ({ param }) => {
   const [details, setDetails] = useState(null);
+  const navigate = useNavigate();
   const fetchDetails = () => {
     const targetDetail = cardDetails.filter((d) => d.param === param);
     setDetails(targetDetail);
@@ -16,6 +19,13 @@ const StatsPerformHero = ({ param }) => {
     <section className="min-h-screen w-full">
       {details?.map((detail) => (
         <div key={detail.param} className="w-full h-full">
+          <div className="fixed right-2 lg:right-3 top-20 z-20">
+            <IoMdClose
+              onClick={() => navigate(-1)}
+              size={35}
+              className="cursor-pointer text-gray-200 bg-gray-600 h-[40px] w-[40px]  rounded-full"
+            />
+          </div>
           {/* upper part */}
           <div className="h-[600px] lg:h-[500px] w-full bg-sky-100 text-gray-800">
             <div className="flex flex-col lg:flex-row items-center h-full w-full pt-20">

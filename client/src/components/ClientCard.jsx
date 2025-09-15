@@ -26,7 +26,7 @@ const ClientCard = () => {
             />
             <div className="h-full lg:h-auto flex lg:flex-auto flex-col  pt-5  ">
               <div className=" flex-1 text-start text-gray-400 text-xl  font-semibold">
-                {project.title}
+                <p className="">{project.heading}</p>{" "}
               </div>
               <div className="w-full flex-1 flex items-end lg:items-center  pb-8 lg:pb-0 pl-5 mb-4">
                 <VscArrowRight

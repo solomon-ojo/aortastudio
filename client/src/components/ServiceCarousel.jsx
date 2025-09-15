@@ -154,7 +154,7 @@ const ServiceCardCarousel = ({ className }) => {
                   className="w-full h-3/5 object-cover px-4"
                 />
                 <div className="p-2  text-gray-200 text-sm lg:text-xl font-semibold">
-                  {card.title}
+                  <p className="">{card.heading}</p>{" "}
                 </div>
                 <div className="w-full hidden lg:block pt-8 pl-5 mb-4">
                   <VscArrowRight
