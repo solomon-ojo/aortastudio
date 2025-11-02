@@ -1,15 +1,15 @@
 import React from "react";
-import Container from "./Container";
+
 
 const OurMission = () => {
   return (
-    <section className="relative z-40 h-[800px] lg:h-screen  w-full bg-white ">
-      <Container>
+    <section className="relative z-40 h-[800px] lg:h-screen  w-full  bg-white border-t border-t-gray-200">
+      
         <div className="w-full h-full  flex flex-col lg:space-x-6 lg:flex-row border-b border-b-gray-300">
           {/* left */}
-          <div className="flex-1 h-full flex items-center pt-20 ">
+          <div className="flex-1 h-full flex items-center pt-10 px-3 lg:px-10 ">
             <div className="text-sm md:text-base">
-              <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-8xl py-5">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-8xl py-5 lg:mb-8">
                 Our Mission{" "}
               </h1>
               <p className="py-2">
@@ -27,7 +27,7 @@ const OurMission = () => {
             </div>
           </div>
           {/* right */}
-          <div className="bg-black flex-1 flex items-center justify-center h-full">
+          <div className="bg-black flex-1 flex items-center justify-center h-full px-3 lg:px-10">
             <div className="flex items-center justify-center">
               <img
                 src="/color_2.svg"
@@ -37,7 +37,7 @@ const OurMission = () => {
             </div>
           </div>
         </div>
-      </Container>
+      
     </section>
   );
 };
