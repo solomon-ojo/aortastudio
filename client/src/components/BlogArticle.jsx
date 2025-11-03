@@ -69,15 +69,16 @@ const BlogArticle = ({ blogParam }) => {
                   </div>
                   {blog?.sections?.map((section) => (
                     <div key={section.id} className="">
-                      <h2
+                      {/* <h2
                         dangerouslySetInnerHTML={{ __html: section?.heading }}
                         className="py-4 text-xl text-gray-500"
-                      ></h2>
+                      ></h2> */}
                       {section?.paragraph?.map((p, idx) => {
                         if (typeof p === "string") {
                           // Plain string paragraph
                           return (
                             <p
+                              className="py-3"
                               key={idx}
                               dangerouslySetInnerHTML={{ __html: p }}
                             ></p>
