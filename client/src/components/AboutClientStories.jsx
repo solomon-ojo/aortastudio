@@ -4,7 +4,7 @@ import AnimatedButton from "./AnimatedButton";
 
 const AboutClientStories = () => {
   return (
-    <section className="relative z-40 h-[100px] lg:h-[400px] w-full bg-white">
+    <section className="relative z-40 h-[100px] lg:h-[300px] w-full bg-white">
       <Container>
         <div className="h-full w-full flex">
           {/* left */} 
