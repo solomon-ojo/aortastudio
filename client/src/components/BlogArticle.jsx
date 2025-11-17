@@ -20,7 +20,7 @@ const BlogArticle = ({ blogParam }) => {
           <div className="h-[500px] lg:h-[600px] w-full bg-emerald-50  text-gray-900 mb-12 ">
             <div className="flex flex-col lg:flex-row items-center h-full w-full pt-20">
               {/* left */}
-              <div className="flex-1 h-3/5 lg:h-full w-full bg-red-600">
+              <div className="flex-1 h-3/5 lg:h-full w-full">
                 <img
                   src={blog.image}
                   alt={blog.title}
